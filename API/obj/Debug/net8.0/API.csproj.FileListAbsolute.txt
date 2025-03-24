@@ -117,3 +117,4 @@
 /home/vlhn/RiderProjects/MESAPP/API/obj/Debug/net8.0/API.pdb
 /home/vlhn/RiderProjects/MESAPP/API/obj/Debug/net8.0/API.genruntimeconfig.cache
 /home/vlhn/RiderProjects/MESAPP/API/obj/Debug/net8.0/ref/API.dll
+/home/vlhn/RiderProjects/MESAPP/API/obj/Debug/net8.0/API.sourcelink.json

@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using WorkstationInfo.Features.GetWorkstationInfo;
+using WorkstationInfo.Features.Quaries.GetWorkstationSummary;
 
 namespace WorkstationInfo.Controllers
 {
@@ -18,15 +19,13 @@ namespace WorkstationInfo.Controllers
             _mediator = mediator;
         }
 
-        /// <summary>
         /// Belirtilen ID'ye sahip workstation bilgilerini getirir.
-        /// </summary>
         [HttpGet("{id}")]
-        public async Task<ActionResult<GetWorkstationInfoDto>> GetWorkstationInfo(int id)
+        public async Task<ActionResult<WorkstationDetailsDto>> GetWorkstationInfo(int id)
         {
             try
             {
-                var result = await _mediator.Send(new GetWorkstationInfoQuery(id));
+                var result = await _mediator.Send(new GetWorkstationDetailsQuery(id));
                 return Ok(result);
             }
             catch (KeyNotFoundException)
@@ -37,6 +36,12 @@ namespace WorkstationInfo.Controllers
             {
                 return StatusCode(500, new { message = "An error occurred.", error = ex.Message });
             }
+        }
+        [HttpGet("summary")]
+        public async Task<ActionResult<List<WorkstationSummaryDto>>> GetAllSummaries()
+        {
+            var result = await _mediator.Send(new GetWorkstationSummaryQuery());
+            return Ok(result);
         }
     }
 }

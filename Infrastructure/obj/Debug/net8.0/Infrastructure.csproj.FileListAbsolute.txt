@@ -12,3 +12,4 @@
 /home/vlhn/RiderProjects/MESAPP/Infrastructure/obj/Debug/net8.0/Infrastructure.pdb
 /home/vlhn/RiderProjects/MESAPP/Infrastructure/obj/Debug/net8.0/Infrastructure.genruntimeconfig.cache
 /home/vlhn/RiderProjects/MESAPP/Infrastructure/obj/Debug/net8.0/ref/Infrastructure.dll
+/home/vlhn/RiderProjects/MESAPP/Infrastructure/obj/Debug/net8.0/Infrastructure.sourcelink.json

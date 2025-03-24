@@ -6,7 +6,7 @@ using WorkstationInfo.Database;
 using WorkstationInfo.Features.GetWorkstationInfo;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(GetWorkstationInfoHandler).Assembly));// Add services to the container.
+builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(GetWorkstationDetailsHandler).Assembly));// Add services to the container.
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 

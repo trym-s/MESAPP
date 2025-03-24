@@ -57,3 +57,4 @@
 /home/vlhn/RiderProjects/MESAPP/WorkstationInfo/obj/Debug/net8.0/WorkstationInfo.pdb
 /home/vlhn/RiderProjects/MESAPP/WorkstationInfo/obj/Debug/net8.0/WorkstationInfo.genruntimeconfig.cache
 /home/vlhn/RiderProjects/MESAPP/WorkstationInfo/obj/Debug/net8.0/ref/WorkstationInfo.dll
+/home/vlhn/RiderProjects/MESAPP/WorkstationInfo/obj/Debug/net8.0/WorkstationInfo.sourcelink.json

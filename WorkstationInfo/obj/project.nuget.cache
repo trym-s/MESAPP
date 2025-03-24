@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "7VxxZMkoFUs=",
+  "dgSpecHash": "tXOPW+DesOE=",
   "success": true,
   "projectFilePath": "/home/vlhn/RiderProjects/MESAPP/WorkstationInfo/WorkstationInfo.csproj",
   "expectedPackageFiles": [
@@ -53,8 +53,8 @@
     "/home/vlhn/.nuget/packages/system.text.encodings.web/8.0.0/system.text.encodings.web.8.0.0.nupkg.sha512",
     "/home/vlhn/.nuget/packages/system.text.json/8.0.0/system.text.json.8.0.0.nupkg.sha512",
     "/home/vlhn/.nuget/packages/system.threading.channels/6.0.0/system.threading.channels.6.0.0.nupkg.sha512",
-    "/home/vlhn/.nuget/packages/microsoft.netcore.app.ref/8.0.13/microsoft.netcore.app.ref.8.0.13.nupkg.sha512",
-    "/home/vlhn/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.13/microsoft.aspnetcore.app.ref.8.0.13.nupkg.sha512"
+    "/home/vlhn/.nuget/packages/microsoft.netcore.app.ref/8.0.14/microsoft.netcore.app.ref.8.0.14.nupkg.sha512",
+    "/home/vlhn/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.14/microsoft.aspnetcore.app.ref.8.0.14.nupkg.sha512"
   ],
   "logs": []
 }

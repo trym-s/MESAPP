@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace WorkstationInfo.Features.GetWorkstationInfo;
 
-public class GetWorkstationInfoDto
+public class WorkstationDetailsDto
 {
     public string WorkstationName { get; set; }
     public string SerialNumber { get; set; }

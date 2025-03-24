@@ -8,16 +8,16 @@ using WorkstationInfo.Database;
 
 namespace WorkstationInfo.Features.GetWorkstationInfo;
 
-public class GetWorkstationInfoHandler : IRequestHandler<GetWorkstationInfoQuery, GetWorkstationInfoDto>
+public class GetWorkstationDetailsHandler : IRequestHandler<GetWorkstationDetailsQuery, WorkstationDetailsDto>
 {
     private readonly WorkstationInfoDbContext _context;
 
-    public GetWorkstationInfoHandler(WorkstationInfoDbContext context)
+    public GetWorkstationDetailsHandler(WorkstationInfoDbContext context)
     {
         _context = context;
     }
 
-    public async Task<GetWorkstationInfoDto> Handle(GetWorkstationInfoQuery request, CancellationToken cancellationToken)
+    public async Task<WorkstationDetailsDto> Handle(GetWorkstationDetailsQuery request, CancellationToken cancellationToken)
     {
         var workstation = await _context.Workstations
             .Include(w => w.Sensors) // ✅ Workstation’a bağlı sensörler getiriliyor
@@ -30,7 +30,7 @@ public class GetWorkstationInfoHandler : IRequestHandler<GetWorkstationInfoQuery
 
         var latestPerformance = workstation.PerformanceRecords.OrderByDescending(p => p.RecordedAt).FirstOrDefault();
 
-        return new GetWorkstationInfoDto 
+        return new WorkstationDetailsDto 
         {
             WorkstationName = workstation.WorkstationName,
             SerialNumber = workstation.SerialNumber,

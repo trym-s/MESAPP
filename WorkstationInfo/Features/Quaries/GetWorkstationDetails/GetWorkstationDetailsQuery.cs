@@ -4,11 +4,11 @@ using WorkstationInfo.Features.GetWorkstationInfo;
 
 namespace WorkstationInfo.Features.GetWorkstationInfo;
 
-public class GetWorkstationInfoQuery : IRequest<GetWorkstationInfoDto>
+public class GetWorkstationDetailsQuery : IRequest<WorkstationDetailsDto>
 {
     public int WorkstationId { get; set; }
 
-    public GetWorkstationInfoQuery
+    public GetWorkstationDetailsQuery
         
         (int workstationId)
     {
