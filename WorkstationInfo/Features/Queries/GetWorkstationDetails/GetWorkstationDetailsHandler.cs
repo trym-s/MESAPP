@@ -5,8 +5,9 @@ using System.Threading.Tasks;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using WorkstationInfo.Database;
+using WorkstationInfo.Features.Shared;
 
-namespace WorkstationInfo.Features.GetWorkstationInfo;
+namespace WorkstationInfo.Features.Queries.GetWorkstationDetails;
 
 public class GetWorkstationDetailsHandler : IRequestHandler<GetWorkstationDetailsQuery, WorkstationDetailsDto>
 {

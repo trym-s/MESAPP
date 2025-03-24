@@ -3,7 +3,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using WorkstationInfo.Database;
 using WorkstationInfo.Repositories;
-
 namespace WorkstationInfo;
 
 public static class WorkstationInfoModule
@@ -14,7 +13,6 @@ public static class WorkstationInfoModule
             options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
 
         services.AddScoped<IWorkstationRepository, WorkstationRepository>();
-
-        return services;
+             return services;
     }
 }

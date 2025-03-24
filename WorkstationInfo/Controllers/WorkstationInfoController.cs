@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using WorkstationInfo.Features.GetWorkstationInfo;
-using WorkstationInfo.Features.Quaries.GetWorkstationSummary;
+using WorkstationInfo.Features.Queries.GetAllWorkstationDetails;
+using WorkstationInfo.Features.Queries.GetWorkstationDetails;
+using WorkstationInfo.Features.Queries.GetWorkstationSummary;
 
 namespace WorkstationInfo.Controllers
 {
@@ -41,6 +42,13 @@ namespace WorkstationInfo.Controllers
         public async Task<ActionResult<List<WorkstationSummaryDto>>> GetAllSummaries()
         {
             var result = await _mediator.Send(new GetWorkstationSummaryQuery());
+            return Ok(result);
+        }
+        
+        [HttpGet("details")]
+        public async Task<ActionResult<List<WorkstationDetailsListItemDto>>> GetAllDetails()
+        {
+            var result = await _mediator.Send(new GetAllWorkstationDetailsQuery());
             return Ok(result);
         }
     }

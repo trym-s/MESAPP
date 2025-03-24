@@ -1,8 +1,6 @@
-using System;
 using MediatR;
-using WorkstationInfo.Features.GetWorkstationInfo;
 
-namespace WorkstationInfo.Features.GetWorkstationInfo;
+namespace WorkstationInfo.Features.Queries.GetWorkstationDetails;
 
 public class GetWorkstationDetailsQuery : IRequest<WorkstationDetailsDto>
 {

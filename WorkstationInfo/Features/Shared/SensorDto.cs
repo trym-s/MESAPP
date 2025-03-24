@@ -1,4 +1,4 @@
-namespace WorkstationInfo.Features.GetWorkstationInfo;
+namespace WorkstationInfo.Features.Shared;
 
 public class SensorDto
 {

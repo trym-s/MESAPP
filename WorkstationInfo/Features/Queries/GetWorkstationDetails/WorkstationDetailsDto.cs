@@ -1,7 +1,8 @@
 using System;
 using System.Collections.Generic;
+using WorkstationInfo.Features.Shared;
 
-namespace WorkstationInfo.Features.GetWorkstationInfo;
+namespace WorkstationInfo.Features.Queries.GetWorkstationDetails;
 
 public class WorkstationDetailsDto
 {

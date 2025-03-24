@@ -3,7 +3,7 @@ using Infrastructure.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using WorkstationInfo;
 using WorkstationInfo.Database;
-using WorkstationInfo.Features.GetWorkstationInfo;
+using WorkstationInfo.Features.Queries.GetWorkstationDetails;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(GetWorkstationDetailsHandler).Assembly));// Add services to the container.
