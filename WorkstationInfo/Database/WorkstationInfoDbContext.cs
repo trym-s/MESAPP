@@ -10,26 +10,24 @@ public class WorkstationInfoDbContext : DbContext
 
     public DbSet<Workstation> Workstations { get; set; }
     public DbSet<Workorder> Workorders { get; set; }
-    public DbSet<WorkstationPerformance> WorkstationPerformances { get; set; }
+    public DbSet<WorkorderPerformanceLog> WorkorderPerformanceLogs { get; set; }
     public DbSet<Sensor> Sensors { get; set; }
     public DbSet<WorkorderEventLog> WorkorderEventLogs { get; set; }
-    public DbSet<WorkstationStateLog> WorkstationStateLogs { get; set; } // <— Include this too!
+    public DbSet<WorkorderStateLog> WorkorderStateLogs { get; set; } // <— Include this too!
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
 
-        // ------------------------------------------------------
         //  TABLE MAPPINGS
-        // ------------------------------------------------------
         modelBuilder.Entity<Workstation>()
             .ToTable("workstation", schema: "mes_db");
         
         modelBuilder.Entity<Workorder>()
             .ToTable("workorder", schema: "mes_db");
         
-        modelBuilder.Entity<WorkstationPerformance>()
-            .ToTable("workstation_performance", schema: "mes_db");
+        modelBuilder.Entity<WorkorderPerformanceLog>()
+            .ToTable("workorder_performance_log", schema: "mes_db");
         
         modelBuilder.Entity<Sensor>()
             .ToTable("sensor", schema: "mes_db");
@@ -37,20 +35,17 @@ public class WorkstationInfoDbContext : DbContext
         modelBuilder.Entity<WorkorderEventLog>()
             .ToTable("workorder_event_log", schema: "mes_db");
         
-        modelBuilder.Entity<WorkstationStateLog>()
-            .ToTable("workstation_state_log", schema: "mes_db");
+        modelBuilder.Entity<WorkorderStateLog>()
+            .ToTable("workorder_state_log", schema: "mes_db");
 
-        // ------------------------------------------------------
         //  PRIMARY KEYS (EF usually infers from "Id"/"EntityNameId", 
-        //  but being explicit can be clearer)
-        // ------------------------------------------------------
         modelBuilder.Entity<Workstation>()
             .HasKey(w => w.WorkstationId);
 
         modelBuilder.Entity<Workorder>()
             .HasKey(wo => wo.WorkorderId);
 
-        modelBuilder.Entity<WorkstationPerformance>()
+        modelBuilder.Entity<WorkorderPerformanceLog>()
             .HasKey(p => p.Id);
 
         modelBuilder.Entity<Sensor>()
@@ -59,13 +54,10 @@ public class WorkstationInfoDbContext : DbContext
         modelBuilder.Entity<WorkorderEventLog>()
             .HasKey(log => log.LogId);
 
-        modelBuilder.Entity<WorkstationStateLog>()
+        modelBuilder.Entity<WorkorderStateLog>()
             .HasKey(log => log.LogId);
 
-        // ------------------------------------------------------
         //  RELATIONSHIPS
-        // ------------------------------------------------------
-
         // (1) Workstation -> Workorder
         modelBuilder.Entity<Workstation>()
             .HasMany(w => w.Workorders)
@@ -115,23 +107,23 @@ public class WorkstationInfoDbContext : DbContext
         //  ADDITIONAL PROPERTY CONFIGURATIONS
         // ------------------------------------------------------
         // e.g. Setting decimal precision
-        modelBuilder.Entity<WorkstationPerformance>()
+        modelBuilder.Entity<WorkorderPerformanceLog>()
             .Property(p => p.Oee)
             .HasPrecision(8, 4); // adapt as needed
 
-        modelBuilder.Entity<WorkstationPerformance>()
+        modelBuilder.Entity<WorkorderPerformanceLog>()
             .Property(p => p.Performance)
             .HasPrecision(8, 4);
 
-        modelBuilder.Entity<WorkstationPerformance>()
+        modelBuilder.Entity<WorkorderPerformanceLog>()
             .Property(p => p.Quality)
             .HasPrecision(8, 4);
 
-        modelBuilder.Entity<WorkstationPerformance>()
+        modelBuilder.Entity<WorkorderPerformanceLog>()
             .Property(p => p.Availability)
             .HasPrecision(8, 4);
 
-        modelBuilder.Entity<WorkstationPerformance>()
+        modelBuilder.Entity<WorkorderPerformanceLog>()
             .Property(p => p.CycleTime)
             .HasPrecision(10, 2);
 

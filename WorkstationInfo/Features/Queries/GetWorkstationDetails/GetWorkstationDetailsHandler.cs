@@ -47,7 +47,14 @@ public class GetWorkstationDetailsHandler : IRequestHandler<GetWorkstationDetail
             Quality = latestPerformance?.Quality,
             Availability = latestPerformance?.Availability,
             TotalTime = latestPerformance?.TotalTime,
-            CycleTime = latestPerformance?.CycleTime
+            CycleTime = latestPerformance?.CycleTime,
+
+            // Yeni süre alanları
+            TotalStartupDowntime = latestPerformance?.TotalStartupDowntime,
+            TotalPlannedDowntime = latestPerformance?.TotalPlannedDowntime,
+            TotalUnplannedDowntime = latestPerformance?.TotalUnplannedDowntime,
+            TotalNetAvailableTime = latestPerformance?.TotalNetAvailableTime,
+            TotalNetOperationTime = latestPerformance?.TotalNetOperationTime
         };
     }
 }

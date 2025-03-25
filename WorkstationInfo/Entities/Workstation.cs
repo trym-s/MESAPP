@@ -13,6 +13,6 @@ public class Workstation
 
     public ICollection<Workorder> Workorders { get; set; }
     public ICollection<Sensor> Sensors { get; set; }
-    public ICollection<WorkstationPerformance> PerformanceRecords { get; set; }
-    public ICollection<WorkstationStateLog> StateLogs { get; set; }
+    public ICollection<WorkorderPerformanceLog> PerformanceRecords { get; set; }
+    public ICollection<WorkorderStateLog> StateLogs { get; set; }
 }

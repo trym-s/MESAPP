@@ -16,6 +16,6 @@ public class Workorder
     public string CurrentScodeValue { get; set; }
 
     public Workstation Workstation { get; set; }
-    public ICollection<WorkstationPerformance> PerformanceRecords { get; set; }
+    public ICollection<WorkorderPerformanceLog> PerformanceRecords { get; set; }
     public ICollection<WorkorderEventLog> EventLogs { get; set; }
 }

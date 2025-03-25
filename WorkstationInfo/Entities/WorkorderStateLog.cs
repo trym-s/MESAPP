@@ -2,7 +2,7 @@ using System;
 
 namespace WorkstationInfo.Entities;
 
-public class WorkstationStateLog
+public class WorkorderStateLog
 {
     public int LogId { get; set; }
     public int WorkstationId { get; set; }

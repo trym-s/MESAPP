@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using WorkstationInfo.Database;
@@ -11,9 +12,11 @@ using WorkstationInfo.Database;
 namespace WorkstationInfo.Migrations
 {
     [DbContext(typeof(WorkstationInfoDbContext))]
-    partial class WorkstationInfoDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250324233028_AddTimingFieldsToWorkstationPerformance")]
+    partial class AddTimingFieldsToWorkstationPerformance
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -117,7 +120,39 @@ namespace WorkstationInfo.Migrations
                     b.ToTable("workorder_event_log", "mes_db");
                 });
 
-            modelBuilder.Entity("WorkstationInfo.Entities.WorkorderPerformanceLog", b =>
+            modelBuilder.Entity("WorkstationInfo.Entities.Workstation", b =>
+                {
+                    b.Property<int>("WorkstationId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("WorkstationId"));
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("boolean");
+
+                    b.Property<string>("ScodeValue")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("SerialNumber")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("WorkstationName")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
+
+                    b.HasKey("WorkstationId");
+
+                    b.HasIndex("SerialNumber")
+                        .IsUnique();
+
+                    b.ToTable("workstation", "mes_db");
+                });
+
+            modelBuilder.Entity("WorkstationInfo.Entities.WorkstationPerformance", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -181,7 +216,7 @@ namespace WorkstationInfo.Migrations
                     b.ToTable("workstation_performance", "mes_db");
                 });
 
-            modelBuilder.Entity("WorkstationInfo.Entities.WorkorderStateLog", b =>
+            modelBuilder.Entity("WorkstationInfo.Entities.WorkstationStateLog", b =>
                 {
                     b.Property<int>("LogId")
                         .ValueGeneratedOnAdd()
@@ -212,38 +247,6 @@ namespace WorkstationInfo.Migrations
                     b.HasIndex("WorkstationId");
 
                     b.ToTable("workstation_state_log", "mes_db");
-                });
-
-            modelBuilder.Entity("WorkstationInfo.Entities.Workstation", b =>
-                {
-                    b.Property<int>("WorkstationId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("WorkstationId"));
-
-                    b.Property<bool>("IsActive")
-                        .HasColumnType("boolean");
-
-                    b.Property<string>("ScodeValue")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("SerialNumber")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("WorkstationName")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("character varying(100)");
-
-                    b.HasKey("WorkstationId");
-
-                    b.HasIndex("SerialNumber")
-                        .IsUnique();
-
-                    b.ToTable("workstation", "mes_db");
                 });
 
             modelBuilder.Entity("WorkstationInfo.Entities.Sensor", b =>
@@ -287,7 +290,7 @@ namespace WorkstationInfo.Migrations
                     b.Navigation("Workstation");
                 });
 
-            modelBuilder.Entity("WorkstationInfo.Entities.WorkorderPerformanceLog", b =>
+            modelBuilder.Entity("WorkstationInfo.Entities.WorkstationPerformance", b =>
                 {
                     b.HasOne("WorkstationInfo.Entities.Workorder", "Workorder")
                         .WithMany("PerformanceRecords")
@@ -306,7 +309,7 @@ namespace WorkstationInfo.Migrations
                     b.Navigation("Workstation");
                 });
 
-            modelBuilder.Entity("WorkstationInfo.Entities.WorkorderStateLog", b =>
+            modelBuilder.Entity("WorkstationInfo.Entities.WorkstationStateLog", b =>
                 {
                     b.HasOne("WorkstationInfo.Entities.Workstation", "Workstation")
                         .WithMany("StateLogs")

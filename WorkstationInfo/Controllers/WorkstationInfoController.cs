@@ -5,6 +5,8 @@ using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using WorkstationInfo.Features.Queries.GetAllWorkstationDetails;
 using WorkstationInfo.Features.Queries.GetWorkstationDetails;
+using WorkstationInfo.Features.Queries.GetWorkstationPerformanceLogs;
+using WorkstationInfo.Features.Queries.GetWorkstationStateLogs;
 using WorkstationInfo.Features.Queries.GetWorkstationSummary;
 
 namespace WorkstationInfo.Controllers
@@ -49,6 +51,18 @@ namespace WorkstationInfo.Controllers
         public async Task<ActionResult<List<WorkstationDetailsListItemDto>>> GetAllDetails()
         {
             var result = await _mediator.Send(new GetAllWorkstationDetailsQuery());
+            return Ok(result);
+        }
+        [HttpGet("{id}/state-logs")]
+        public async Task<ActionResult<List<WorkstationStateLogsDto>>> GetStateLogs(int id)
+        {
+            var result = await _mediator.Send(new GetWorkstationStateLogsQuery(id));
+            return Ok(result);
+        }
+        [HttpGet("{id}/performance-logs")]
+        public async Task<ActionResult<List<WorkstationPerformanceLogDto>>> GetPerformanceLogs(int id)
+        {
+            var result = await _mediator.Send(new GetWorkstationPerformanceLogsQuery(id));
             return Ok(result);
         }
     }
