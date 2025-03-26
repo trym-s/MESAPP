@@ -9,7 +9,6 @@ public class Workstation
     public string WorkstationName { get; set; }
     public bool IsActive { get; set; }
     public string SerialNumber { get; set; }
-    public string ScodeValue { get; set; }
 
     public ICollection<Workorder> Workorders { get; set; }
     public ICollection<Sensor> Sensors { get; set; }

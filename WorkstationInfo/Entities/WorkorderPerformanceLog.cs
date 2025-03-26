@@ -18,10 +18,10 @@ public class WorkorderPerformanceLog
     public Workstation Workstation { get; set; }
     public Workorder Workorder { get; set; }
     
-    public TimeSpan? TotalStartupDowntime { get; set; }
-    public TimeSpan? TotalPlannedDowntime { get; set; }
-    public TimeSpan? TotalUnplannedDowntime { get; set; }
-    public TimeSpan? TotalNetAvailableTime { get; set; }
-    public TimeSpan? TotalNetOperationTime { get; set; }
+    public TimeSpan? total_startup_downtime { get; set; }
+    public TimeSpan? total_planned_downtime { get; set; }
+    public TimeSpan? total_unplanned_downtime { get; set; }
+    public TimeSpan? total_net_available_time { get; set; }
+    public TimeSpan? total_net_operation_time { get; set; }
     public TimeSpan TotalTime { get; set; }
 }

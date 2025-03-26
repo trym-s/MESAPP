@@ -25,6 +25,7 @@ namespace WorkstationInfo.Controllers
         /// Belirtilen ID'ye sahip workstation bilgilerini getirir.
         [HttpGet("{id}")]
         public async Task<ActionResult<WorkstationDetailsDto>> GetWorkstationInfo(int id)
+        
         {
             try
             {

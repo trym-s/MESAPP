@@ -30,7 +30,7 @@ public class GetWorkstationPerformanceLogsHandler : IRequestHandler<GetWorkstati
                 Performance = p.Performance,
                 Quality = p.Quality,
                 TotalTime = p.TotalTime,
-                TotalNetOperationTime = p.TotalNetOperationTime,
+                TotalNetOperationTime = p.total_net_operation_time,
                 WorkorderId = p.WorkorderId
             })
             .ToListAsync(cancellationToken);

@@ -12,7 +12,6 @@ public class WorkstationInfoDbContext : DbContext
     public DbSet<Workorder> Workorders { get; set; }
     public DbSet<WorkorderPerformanceLog> WorkorderPerformanceLogs { get; set; }
     public DbSet<Sensor> Sensors { get; set; }
-    public DbSet<WorkorderEventLog> WorkorderEventLogs { get; set; }
     public DbSet<WorkorderStateLog> WorkorderStateLogs { get; set; } // <— Include this too!
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -32,8 +31,7 @@ public class WorkstationInfoDbContext : DbContext
         modelBuilder.Entity<Sensor>()
             .ToTable("sensor", schema: "mes_db");
         
-        modelBuilder.Entity<WorkorderEventLog>()
-            .ToTable("workorder_event_log", schema: "mes_db");
+      
         
         modelBuilder.Entity<WorkorderStateLog>()
             .ToTable("workorder_state_log", schema: "mes_db");
@@ -51,10 +49,7 @@ public class WorkstationInfoDbContext : DbContext
         modelBuilder.Entity<Sensor>()
             .HasKey(s => s.SensorId);
 
-        modelBuilder.Entity<WorkorderEventLog>()
-            .HasKey(log => log.LogId);
-
-        modelBuilder.Entity<WorkorderStateLog>()
+            modelBuilder.Entity<WorkorderStateLog>()
             .HasKey(log => log.LogId);
 
         //  RELATIONSHIPS
@@ -83,18 +78,7 @@ public class WorkstationInfoDbContext : DbContext
             .WithOne(p => p.Workorder)
             .HasForeignKey(p => p.WorkorderId);
 
-        // (5) WorkorderEventLog -> Workorder
-        modelBuilder.Entity<WorkorderEventLog>()
-            .HasOne(log => log.Workorder)
-            .WithMany(wo => wo.EventLogs)
-            .HasForeignKey(log => log.WorkorderId);
-
-        // (6) WorkorderEventLog -> Workstation
-        modelBuilder.Entity<WorkorderEventLog>()
-            .HasOne(log => log.Workstation)
-            .WithMany()
-            .HasForeignKey(log => log.WorkstationId);
-
+      
         // (7) WorkstationStateLog -> Workstation
         modelBuilder.Entity<Workstation>()
             .HasMany(w => w.StateLogs)

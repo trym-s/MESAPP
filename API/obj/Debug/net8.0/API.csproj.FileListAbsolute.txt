@@ -1,3 +1,4 @@
+/home/vlhn/RiderProjects/MESAPP/API/bin/Debug/net8.0/OperatorPanel.staticwebassets.endpoints.json
 /home/vlhn/RiderProjects/MESAPP/API/bin/Debug/net8.0/appsettings.Development.json
 /home/vlhn/RiderProjects/MESAPP/API/bin/Debug/net8.0/appsettings.json
 /home/vlhn/RiderProjects/MESAPP/API/bin/Debug/net8.0/API.staticwebassets.runtime.json
@@ -87,9 +88,11 @@
 /home/vlhn/RiderProjects/MESAPP/API/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll
 /home/vlhn/RiderProjects/MESAPP/API/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll
 /home/vlhn/RiderProjects/MESAPP/API/bin/Debug/net8.0/Infrastructure.dll
+/home/vlhn/RiderProjects/MESAPP/API/bin/Debug/net8.0/OperatorPanel.dll
 /home/vlhn/RiderProjects/MESAPP/API/bin/Debug/net8.0/WorkstationInfo.dll
 /home/vlhn/RiderProjects/MESAPP/API/bin/Debug/net8.0/Infrastructure.pdb
 /home/vlhn/RiderProjects/MESAPP/API/bin/Debug/net8.0/WorkstationInfo.pdb
+/home/vlhn/RiderProjects/MESAPP/API/bin/Debug/net8.0/OperatorPanel.pdb
 /home/vlhn/RiderProjects/MESAPP/API/obj/Debug/net8.0/API.csproj.AssemblyReference.cache
 /home/vlhn/RiderProjects/MESAPP/API/obj/Debug/net8.0/API.GeneratedMSBuildEditorConfig.editorconfig
 /home/vlhn/RiderProjects/MESAPP/API/obj/Debug/net8.0/API.AssemblyInfoInputs.cache
@@ -99,6 +102,7 @@
 /home/vlhn/RiderProjects/MESAPP/API/obj/Debug/net8.0/API.MvcApplicationPartsAssemblyInfo.cache
 /home/vlhn/RiderProjects/MESAPP/API/obj/Debug/net8.0/API.RazorAssemblyInfo.cache
 /home/vlhn/RiderProjects/MESAPP/API/obj/Debug/net8.0/API.RazorAssemblyInfo.cs
+/home/vlhn/RiderProjects/MESAPP/API/obj/Debug/net8.0/API.sourcelink.json
 /home/vlhn/RiderProjects/MESAPP/API/obj/Debug/net8.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
 /home/vlhn/RiderProjects/MESAPP/API/obj/Debug/net8.0/scopedcss/bundle/API.styles.css
 /home/vlhn/RiderProjects/MESAPP/API/obj/Debug/net8.0/scopedcss/projectbundle/API.bundle.scp.css
@@ -117,4 +121,3 @@
 /home/vlhn/RiderProjects/MESAPP/API/obj/Debug/net8.0/API.pdb
 /home/vlhn/RiderProjects/MESAPP/API/obj/Debug/net8.0/API.genruntimeconfig.cache
 /home/vlhn/RiderProjects/MESAPP/API/obj/Debug/net8.0/ref/API.dll
-/home/vlhn/RiderProjects/MESAPP/API/obj/Debug/net8.0/API.sourcelink.json

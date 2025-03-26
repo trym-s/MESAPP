@@ -29,6 +29,9 @@
               "/home/vlhn/RiderProjects/MESAPP/Infrastructure/Infrastructure.csproj": {
                 "projectPath": "/home/vlhn/RiderProjects/MESAPP/Infrastructure/Infrastructure.csproj"
               },
+              "/home/vlhn/RiderProjects/MESAPP/OperatorPanel/OperatorPanel.csproj": {
+                "projectPath": "/home/vlhn/RiderProjects/MESAPP/OperatorPanel/OperatorPanel.csproj"
+              },
               "/home/vlhn/RiderProjects/MESAPP/WorkstationInfo/WorkstationInfo.csproj": {
                 "projectPath": "/home/vlhn/RiderProjects/MESAPP/WorkstationInfo/WorkstationInfo.csproj"
               }
@@ -188,6 +191,141 @@
             }
           ],
           "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.104/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/vlhn/RiderProjects/MESAPP/OperatorPanel/OperatorPanel.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/vlhn/RiderProjects/MESAPP/OperatorPanel/OperatorPanel.csproj",
+        "projectName": "OperatorPanel",
+        "projectPath": "/home/vlhn/RiderProjects/MESAPP/OperatorPanel/OperatorPanel.csproj",
+        "packagesPath": "/home/vlhn/.nuget/packages/",
+        "outputPath": "/home/vlhn/RiderProjects/MESAPP/OperatorPanel/obj/",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "configFilePaths": [
+          "/home/vlhn/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0",
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/vlhn/RiderProjects/MESAPP/Infrastructure/Infrastructure.csproj": {
+                "projectPath": "/home/vlhn/RiderProjects/MESAPP/Infrastructure/Infrastructure.csproj"
+              }
+            }
+          },
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/home/vlhn/RiderProjects/MESAPP/Infrastructure/Infrastructure.csproj": {
+                "projectPath": "/home/vlhn/RiderProjects/MESAPP/Infrastructure/Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.4.1, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.14, 8.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.14, 8.0.14]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.104/PortableRuntimeIdentifierGraph.json"
+        },
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.4.1, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[9.0.3, 9.0.3]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

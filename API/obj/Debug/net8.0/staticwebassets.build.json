@@ -1,11 +1,23 @@
 {
   "Version": 1,
-  "Hash": "NPJuHlkFQO9RumWMFmBw5PW6ZptReXwGMZhMcuCJhIk=",
+  "Hash": "VO12ZNqV1/AJZrk7AxtF52Cw6VLPPFFfCyvN+DThJuo=",
   "Source": "API",
   "BasePath": "_content/API",
   "Mode": "Default",
   "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "/home/vlhn/RiderProjects/MESAPP/OperatorPanel/OperatorPanel.csproj",
+      "Version": 2,
+      "Source": "OperatorPanel",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU;TargetFramework=net8.0",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;RuntimeIdentifier;SelfContained",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU;TargetFramework=net8.0",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;RuntimeIdentifier;SelfContained"
+    }
+  ],
   "DiscoveryPatterns": [
     {
       "Name": "API/wwwroot",
@@ -1406,7 +1418,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 11 Mar 2025 20:27:19 GMT"
+          "Value": "Wed, 26 Mar 2025 16:27:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1443,7 +1455,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 11 Mar 2025 20:27:19 GMT"
+          "Value": "Wed, 26 Mar 2025 16:27:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1488,7 +1500,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 11 Mar 2025 20:27:19 GMT"
+          "Value": "Wed, 26 Mar 2025 16:27:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1533,7 +1545,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 11 Mar 2025 20:27:19 GMT"
+          "Value": "Wed, 26 Mar 2025 16:27:41 GMT"
         },
         {
           "Name": "Cache-Control",

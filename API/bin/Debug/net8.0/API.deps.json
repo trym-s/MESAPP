@@ -10,6 +10,7 @@
         "dependencies": {
           "Infrastructure": "1.0.0",
           "MediatR": "12.4.1",
+          "OperatorPanel": "1.0.0",
           "WorkstationInfo": "1.0.0"
         },
         "runtime": {
@@ -597,6 +598,19 @@
           }
         }
       },
+      "OperatorPanel/1.0.0": {
+        "dependencies": {
+          "Infrastructure": "1.0.0",
+          "MediatR": "12.4.1",
+          "Microsoft.Extensions.DependencyInjection": "8.0.1"
+        },
+        "runtime": {
+          "OperatorPanel.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "WorkstationInfo/1.0.0": {
         "dependencies": {
           "Infrastructure": "1.0.0",
@@ -969,6 +983,11 @@
       "hashPath": "system.threading.channels.6.0.0.nupkg.sha512"
     },
     "Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "OperatorPanel/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

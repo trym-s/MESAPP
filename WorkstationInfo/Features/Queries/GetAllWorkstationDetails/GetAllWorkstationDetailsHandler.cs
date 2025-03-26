@@ -30,7 +30,7 @@ public class GetAllWorkstationDetailsHandler : IRequestHandler<GetAllWorkstation
         return workstations.Select(w =>
         {
             var activeWorkorder = w.Workorders.FirstOrDefault(wo => wo.IsActive);
-            var scode = activeWorkorder?.CurrentScodeValue;
+            int? scode = activeWorkorder?.CurrentScodeValue;
             var latestPerf = w.PerformanceRecords
                 .OrderByDescending(p => p.RecordedAt)
                 .FirstOrDefault();
@@ -54,11 +54,11 @@ public class GetAllWorkstationDetailsHandler : IRequestHandler<GetAllWorkstation
                 CycleTime = latestPerf?.CycleTime,
 
                 // Yeni eklenen süre alanları
-                TotalStartupDowntime = latestPerf?.TotalStartupDowntime,
-                TotalPlannedDowntime = latestPerf?.TotalPlannedDowntime,
-                TotalUnplannedDowntime = latestPerf?.TotalUnplannedDowntime,
-                TotalNetAvailableTime = latestPerf?.TotalNetAvailableTime,
-                TotalNetOperationTime = latestPerf?.TotalNetOperationTime
+                TotalStartupDowntime = latestPerf?.total_startup_downtime,
+                TotalPlannedDowntime = latestPerf?.total_planned_downtime,
+                TotalUnplannedDowntime = latestPerf?.total_unplanned_downtime,
+                TotalNetAvailableTime = latestPerf?.total_net_available_time,
+                TotalNetOperationTime = latestPerf?.total_net_operation_time
             };
         }).ToList();
 

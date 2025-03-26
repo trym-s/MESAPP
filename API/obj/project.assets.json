@@ -1054,6 +1054,24 @@
           "bin/placeholder/Infrastructure.dll": {}
         }
       },
+      "OperatorPanel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Infrastructure": "1.0.0",
+          "MediatR": "12.4.1",
+          "Microsoft.Extensions.DependencyInjection": "8.0.1"
+        },
+        "compile": {
+          "bin/placeholder/OperatorPanel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OperatorPanel.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "WorkstationInfo/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -2718,6 +2736,11 @@
       "path": "../Infrastructure/Infrastructure.csproj",
       "msbuildProject": "../Infrastructure/Infrastructure.csproj"
     },
+    "OperatorPanel/1.0.0": {
+      "type": "project",
+      "path": "../OperatorPanel/OperatorPanel.csproj",
+      "msbuildProject": "../OperatorPanel/OperatorPanel.csproj"
+    },
     "WorkstationInfo/1.0.0": {
       "type": "project",
       "path": "../WorkstationInfo/WorkstationInfo.csproj",
@@ -2728,6 +2751,7 @@
     "net8.0": [
       "Infrastructure >= 1.0.0",
       "MediatR >= 12.4.1",
+      "OperatorPanel >= 1.0.0",
       "WorkstationInfo >= 1.0.0"
     ]
   },
@@ -2758,6 +2782,9 @@
           "projectReferences": {
             "/home/vlhn/RiderProjects/MESAPP/Infrastructure/Infrastructure.csproj": {
               "projectPath": "/home/vlhn/RiderProjects/MESAPP/Infrastructure/Infrastructure.csproj"
+            },
+            "/home/vlhn/RiderProjects/MESAPP/OperatorPanel/OperatorPanel.csproj": {
+              "projectPath": "/home/vlhn/RiderProjects/MESAPP/OperatorPanel/OperatorPanel.csproj"
             },
             "/home/vlhn/RiderProjects/MESAPP/WorkstationInfo/WorkstationInfo.csproj": {
               "projectPath": "/home/vlhn/RiderProjects/MESAPP/WorkstationInfo/WorkstationInfo.csproj"

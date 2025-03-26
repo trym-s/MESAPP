@@ -35,7 +35,6 @@ public class GetWorkstationDetailsHandler : IRequestHandler<GetWorkstationDetail
         {
             WorkstationName = workstation.WorkstationName,
             SerialNumber = workstation.SerialNumber,
-            ActiveScode = workstation.ScodeValue,
             Sensors = workstation.Sensors.Select(s => new SensorDto
             {
                 SensorId = s.SensorId,
@@ -49,12 +48,11 @@ public class GetWorkstationDetailsHandler : IRequestHandler<GetWorkstationDetail
             TotalTime = latestPerformance?.TotalTime,
             CycleTime = latestPerformance?.CycleTime,
 
-            // Yeni süre alanları
-            TotalStartupDowntime = latestPerformance?.TotalStartupDowntime,
-            TotalPlannedDowntime = latestPerformance?.TotalPlannedDowntime,
-            TotalUnplannedDowntime = latestPerformance?.TotalUnplannedDowntime,
-            TotalNetAvailableTime = latestPerformance?.TotalNetAvailableTime,
-            TotalNetOperationTime = latestPerformance?.TotalNetOperationTime
+            TotalStartupDowntime = latestPerformance?.total_startup_downtime,
+            TotalPlannedDowntime = latestPerformance?.total_planned_downtime,
+            TotalUnplannedDowntime = latestPerformance?.total_unplanned_downtime,
+            TotalNetAvailableTime = latestPerformance?.total_net_available_time,
+            TotalNetOperationTime = latestPerformance?.total_net_operation_time
         };
     }
 }

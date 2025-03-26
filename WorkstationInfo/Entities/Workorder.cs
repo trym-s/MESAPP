@@ -13,9 +13,8 @@ public class Workorder
     public bool IsActive { get; set; }
     public DateTime StartDate { get; set; }
     public DateTime FinishDate { get; set; }
-    public string CurrentScodeValue { get; set; }
+    public int CurrentScodeValue { get; set; }
 
     public Workstation Workstation { get; set; }
     public ICollection<WorkorderPerformanceLog> PerformanceRecords { get; set; }
-    public ICollection<WorkorderEventLog> EventLogs { get; set; }
 }

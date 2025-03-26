@@ -51,10 +51,10 @@
 /home/vlhn/RiderProjects/MESAPP/WorkstationInfo/obj/Debug/net8.0/WorkstationInfo.AssemblyInfoInputs.cache
 /home/vlhn/RiderProjects/MESAPP/WorkstationInfo/obj/Debug/net8.0/WorkstationInfo.AssemblyInfo.cs
 /home/vlhn/RiderProjects/MESAPP/WorkstationInfo/obj/Debug/net8.0/WorkstationInfo.csproj.CoreCompileInputs.cache
+/home/vlhn/RiderProjects/MESAPP/WorkstationInfo/obj/Debug/net8.0/WorkstationInfo.sourcelink.json
 /home/vlhn/RiderProjects/MESAPP/WorkstationInfo/obj/Debug/net8.0/Workstat.7A2031FF.Up2Date
 /home/vlhn/RiderProjects/MESAPP/WorkstationInfo/obj/Debug/net8.0/WorkstationInfo.dll
 /home/vlhn/RiderProjects/MESAPP/WorkstationInfo/obj/Debug/net8.0/refint/WorkstationInfo.dll
 /home/vlhn/RiderProjects/MESAPP/WorkstationInfo/obj/Debug/net8.0/WorkstationInfo.pdb
 /home/vlhn/RiderProjects/MESAPP/WorkstationInfo/obj/Debug/net8.0/WorkstationInfo.genruntimeconfig.cache
 /home/vlhn/RiderProjects/MESAPP/WorkstationInfo/obj/Debug/net8.0/ref/WorkstationInfo.dll
-/home/vlhn/RiderProjects/MESAPP/WorkstationInfo/obj/Debug/net8.0/WorkstationInfo.sourcelink.json
