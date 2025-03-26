@@ -1,4 +1,4 @@
-namespace WorkstationInfo.Features.Queries.GetWorkstationSummary;
+namespace WorkstationInfo.Features.Queries.Workstations.GetWorkstationSummary;
 
 public class WorkstationSummaryDto
 {

@@ -1,6 +1,6 @@
 using MediatR;
 
-namespace OperatorPanel.Features.Commands;
+namespace OperatorPanel.Features.Commands.ChangeScode;
 
 public class ChangeScodeCommand :  IRequest<ChangeScodeResult>
 {

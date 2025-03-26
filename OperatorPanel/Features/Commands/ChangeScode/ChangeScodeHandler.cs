@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using OperatorPanel.Database;
 using OperatorPanel.Entities;
 
-namespace OperatorPanel.Features.Commands;
+namespace OperatorPanel.Features.Commands.ChangeScode;
 
 public class ChangeScodeHandler : IRequestHandler<ChangeScodeCommand, ChangeScodeResult>
 {

@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using WorkstationInfo.Database;
 using WorkstationInfo.Mappings;
 
-namespace WorkstationInfo.Features.Queries.GetWorkstationSummary;
+namespace WorkstationInfo.Features.Queries.Workstations.GetWorkstationSummary;
 
 public class GetWorkstationSummaryHandler : IRequestHandler<GetWorkstationSummaryQuery, List<WorkstationSummaryDto>>
 {

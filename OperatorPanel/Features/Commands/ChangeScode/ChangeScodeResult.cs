@@ -1,4 +1,4 @@
-namespace OperatorPanel.Features.Commands;
+namespace OperatorPanel.Features.Commands.ChangeScode;
 
 public class ChangeScodeResult
 {

@@ -29,4 +29,9 @@
       </Reference>
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Features\Queries\Workorders\" />
+      <Folder Include="Features\Queries\Workstations\" />
+    </ItemGroup>
+
 </Project>

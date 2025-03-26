@@ -4,10 +4,11 @@ using System.Threading.Tasks;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using WorkstationInfo.Features.Queries.GetAllWorkstationDetails;
+using WorkstationInfo.Features.Queries.GetWorkorders.GetWorkordersByWorkstation;
 using WorkstationInfo.Features.Queries.GetWorkstationDetails;
 using WorkstationInfo.Features.Queries.GetWorkstationPerformanceLogs;
 using WorkstationInfo.Features.Queries.GetWorkstationStateLogs;
-using WorkstationInfo.Features.Queries.GetWorkstationSummary;
+using WorkstationInfo.Features.Queries.Workstations.GetWorkstationSummary;
 
 namespace WorkstationInfo.Controllers
 {
@@ -66,5 +67,13 @@ namespace WorkstationInfo.Controllers
             var result = await _mediator.Send(new GetWorkstationPerformanceLogsQuery(id));
             return Ok(result);
         }
+        
+        [HttpGet("{id}/workorders")]
+        public async Task<ActionResult<List<WorkorderDto>>> GetWorkordersByWorkstation(int id)
+        {
+            var result = await _mediator.Send(new GetWorkordersByWorkstationQuery(id));
+            return Ok(result);
+        }
+
     }
 }

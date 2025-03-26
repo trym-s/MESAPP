@@ -1,6 +1,8 @@
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using OperatorPanel.Features.Commands;
+using OperatorPanel.Features.Commands.ActivateWorkorder;
+using OperatorPanel.Features.Commands.ChangeScode;
 
 namespace OperatorPanel.Controllers;
 
@@ -25,9 +27,27 @@ public class OperatorActionsController : ControllerBase
 
         return Ok(new
         {
-            message =  result.Message,
+            message = "Scode updated successfully.",
             oldScode = result.OldScode,
             newScode = result.NewScode
+        });
+    }
+    
+    [HttpPost("{id}/activate-workorder")]
+    public async Task<IActionResult> ActivateWorkorder(int id, [FromBody] ActivateWorkorderCommand command)
+    {
+        if (id != command.WorkstationId)
+            return BadRequest("URL workstation ID ile body workstation ID eşleşmiyor.");
+
+        var result = await _mediator.Send(command);
+
+        return Ok(new
+        {
+            succes = result.Success,
+            message = result.Message,
+            previousWorkorderId = result.PreviousActiveWorkorderId,
+            newWorkorderId = result.NewActiveWorkorderId,
+            initialScode = result.InitialScode
         });
     }
 
