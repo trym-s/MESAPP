@@ -31,7 +31,7 @@ public class WorkstationInfoDbContext : DbContext
         modelBuilder.Entity<Sensor>()
             .ToTable("sensor", schema: "mes_db");
         
-      
+
         
         modelBuilder.Entity<WorkorderStateLog>()
             .ToTable("workorder_state_log", schema: "mes_db");

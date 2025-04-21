@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using WorkstationInfo.Features.Queries.GetAllWorkstationDetails;
+using WorkstationInfo.Features.Queries.GetScodeDistribution;
 using WorkstationInfo.Features.Queries.GetWorkorders.GetWorkordersByWorkstation;
 using WorkstationInfo.Features.Queries.GetWorkstationDetails;
 using WorkstationInfo.Features.Queries.GetWorkstationPerformanceLogs;
@@ -26,7 +27,6 @@ namespace WorkstationInfo.Controllers
         /// Belirtilen ID'ye sahip workstation bilgilerini getirir.
         [HttpGet("{id}")]
         public async Task<ActionResult<WorkstationDetailsDto>> GetWorkstationInfo(int id)
-        
         {
             try
             {
@@ -74,6 +74,13 @@ namespace WorkstationInfo.Controllers
             var result = await _mediator.Send(new GetWorkordersByWorkstationQuery(id));
             return Ok(result);
         }
+        [HttpGet("{id}/scode-distribution")]
+        public async Task<ActionResult<List<ScodeDurationDto>>> GetScodeDistribution(int id)
+        {
+            var result = await _mediator.Send(new GetScodeDistributionQuery(id));
+            return Ok(result);
+        }
+
 
     }
 }

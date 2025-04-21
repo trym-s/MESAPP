@@ -1,20 +1,20 @@
 {
   "Version": 1,
-  "Hash": "VO12ZNqV1/AJZrk7AxtF52Cw6VLPPFFfCyvN+DThJuo=",
+  "Hash": "UYOXSWJnVi1ge81epRceHhREhQXmupVWKhJHoZ4Zwkg=",
   "Source": "API",
   "BasePath": "_content/API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/OperatorPanel/OperatorPanel.csproj",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/OperatorPanel/OperatorPanel.csproj",
       "Version": 2,
       "Source": "OperatorPanel",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
-      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU;TargetFramework=net8.0",
+      "AdditionalPublishProperties": "TargetFramework=net8.0",
       "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;RuntimeIdentifier;SelfContained",
       "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
-      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU;TargetFramework=net8.0",
+      "AdditionalBuildProperties": "TargetFramework=net8.0",
       "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;RuntimeIdentifier;SelfContained"
     }
   ],
@@ -22,17 +22,17 @@
     {
       "Name": "API/wwwroot",
       "Source": "API",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/obj/Debug/net8.0/scopedcss/bundle/API.styles.css",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/obj/Debug/net8.0/scopedcss/bundle/API.styles.css",
       "SourceId": "API",
       "SourceType": "Computed",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/obj/Debug/net8.0/scopedcss/bundle/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/obj/Debug/net8.0/scopedcss/bundle/",
       "BasePath": "_content/API",
       "RelativePath": "API#[.{fingerprint}]?.styles.css",
       "AssetKind": "All",
@@ -47,13 +47,13 @@
       "Integrity": "4tgNmrW3sirBCcKxzuN5VvM50aXzIb+AxPDP52CI0WA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/vlhn/RiderProjects/MESAPP/API/obj/Debug/net8.0/scopedcss/bundle/API.styles.css"
+      "OriginalItemSpec": "/home/vlhn/dev/MESAPP/MESAPP/API/obj/Debug/net8.0/scopedcss/bundle/API.styles.css"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/obj/Debug/net8.0/scopedcss/projectbundle/API.bundle.scp.css",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/obj/Debug/net8.0/scopedcss/projectbundle/API.bundle.scp.css",
       "SourceId": "API",
       "SourceType": "Computed",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/obj/Debug/net8.0/scopedcss/projectbundle/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/obj/Debug/net8.0/scopedcss/projectbundle/",
       "BasePath": "_content/API",
       "RelativePath": "API#[.{fingerprint}]!.bundle.scp.css",
       "AssetKind": "All",
@@ -68,13 +68,13 @@
       "Integrity": "4tgNmrW3sirBCcKxzuN5VvM50aXzIb+AxPDP52CI0WA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/vlhn/RiderProjects/MESAPP/API/obj/Debug/net8.0/scopedcss/projectbundle/API.bundle.scp.css"
+      "OriginalItemSpec": "/home/vlhn/dev/MESAPP/MESAPP/API/obj/Debug/net8.0/scopedcss/projectbundle/API.bundle.scp.css"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/css/site.css",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/css/site.css",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "css/site#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -92,10 +92,10 @@
       "OriginalItemSpec": "wwwroot/css/site.css"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/favicon.ico",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/favicon.ico",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "favicon#[.{fingerprint}]?.ico",
       "AssetKind": "All",
@@ -113,10 +113,10 @@
       "OriginalItemSpec": "wwwroot/favicon.ico"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/js/site.js",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/js/site.js",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "js/site#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -134,10 +134,10 @@
       "OriginalItemSpec": "wwwroot/js/site.js"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -155,10 +155,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -176,10 +176,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -197,10 +197,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -218,10 +218,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -239,10 +239,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -260,10 +260,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -281,10 +281,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -302,10 +302,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -323,10 +323,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -344,10 +344,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -365,10 +365,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -386,10 +386,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -407,10 +407,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -428,10 +428,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -449,10 +449,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -470,10 +470,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -491,10 +491,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -512,10 +512,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -533,10 +533,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -554,10 +554,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -575,10 +575,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -596,10 +596,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -617,10 +617,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -638,10 +638,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -659,10 +659,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.css"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -680,10 +680,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.css.map"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -701,10 +701,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.min.css"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -722,10 +722,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -743,10 +743,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -764,10 +764,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -785,10 +785,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -806,10 +806,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -827,10 +827,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -848,10 +848,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -869,10 +869,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -890,10 +890,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -911,10 +911,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -932,10 +932,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -953,10 +953,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -974,10 +974,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -995,10 +995,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.js"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1016,10 +1016,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.js.map"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1037,10 +1037,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.min.js"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1058,10 +1058,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/LICENSE",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/LICENSE",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/bootstrap/LICENSE#[.{fingerprint}]?",
       "AssetKind": "All",
@@ -1079,10 +1079,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/LICENSE"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1100,10 +1100,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1121,10 +1121,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE#[.{fingerprint}]?.txt",
       "AssetKind": "All",
@@ -1142,10 +1142,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/jquery-validation/dist/additional-methods.js",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/jquery-validation/dist/additional-methods#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1163,10 +1163,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/additional-methods.js"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1184,10 +1184,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/additional-methods.min.js"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1205,10 +1205,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/jquery.validate.js"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1226,10 +1226,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/jquery.validate.min.js"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/jquery-validation/LICENSE.md",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/jquery-validation/LICENSE.md",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/jquery-validation/LICENSE#[.{fingerprint}]?.md",
       "AssetKind": "All",
@@ -1247,10 +1247,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/LICENSE.md"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/jquery/dist/jquery.js",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/jquery/dist/jquery.js",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/jquery/dist/jquery#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1268,10 +1268,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.js"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/jquery/dist/jquery.min.js",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/jquery/dist/jquery.min.js",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/jquery/dist/jquery.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1289,10 +1289,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.min.js"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/jquery/dist/jquery.min.map",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/jquery/dist/jquery.min.map",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/jquery/dist/jquery.min#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1310,10 +1310,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.min.map"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/jquery/dist/jquery.slim.js",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/jquery/dist/jquery.slim.js",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/jquery/dist/jquery.slim#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1331,10 +1331,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.slim.js"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/jquery/dist/jquery.slim.min.js",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/jquery/dist/jquery.slim.min.js",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/jquery/dist/jquery.slim.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1352,10 +1352,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.slim.min.js"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/jquery/dist/jquery.slim.min.map",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/jquery/dist/jquery.slim.min.map",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/jquery/dist/jquery.slim.min#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1373,10 +1373,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.slim.min.map"
     },
     {
-      "Identity": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/jquery/LICENSE.txt",
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/jquery/LICENSE.txt",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/",
+      "ContentRoot": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/",
       "BasePath": "_content/API",
       "RelativePath": "lib/jquery/LICENSE#[.{fingerprint}]?.txt",
       "AssetKind": "All",
@@ -1397,7 +1397,7 @@
   "Endpoints": [
     {
       "Route": "API.bundle.scp.css",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/obj/Debug/net8.0/scopedcss/projectbundle/API.bundle.scp.css",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/obj/Debug/net8.0/scopedcss/projectbundle/API.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1418,7 +1418,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Mar 2025 16:27:41 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1434,7 +1434,7 @@
     },
     {
       "Route": "API.myojutje51.bundle.scp.css",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/obj/Debug/net8.0/scopedcss/projectbundle/API.bundle.scp.css",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/obj/Debug/net8.0/scopedcss/projectbundle/API.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1455,7 +1455,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Mar 2025 16:27:41 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1479,7 +1479,7 @@
     },
     {
       "Route": "API.myojutje51.styles.css",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/obj/Debug/net8.0/scopedcss/bundle/API.styles.css",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/obj/Debug/net8.0/scopedcss/bundle/API.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1500,7 +1500,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Mar 2025 16:27:41 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1524,7 +1524,7 @@
     },
     {
       "Route": "API.styles.css",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/obj/Debug/net8.0/scopedcss/bundle/API.styles.css",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/obj/Debug/net8.0/scopedcss/bundle/API.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1545,7 +1545,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Mar 2025 16:27:41 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1561,7 +1561,7 @@
     },
     {
       "Route": "css/site.css",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/css/site.css",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/css/site.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1582,7 +1582,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1598,7 +1598,7 @@
     },
     {
       "Route": "css/site.lugek5hnai.css",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/css/site.css",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/css/site.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1619,7 +1619,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1643,7 +1643,7 @@
     },
     {
       "Route": "favicon.61n19gt1b8.ico",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/favicon.ico",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/favicon.ico",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1664,7 +1664,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1688,7 +1688,7 @@
     },
     {
       "Route": "favicon.ico",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/favicon.ico",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/favicon.ico",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1709,7 +1709,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1725,7 +1725,7 @@
     },
     {
       "Route": "js/site.fr7q2aak1r.js",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/js/site.js",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/js/site.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1746,7 +1746,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1770,7 +1770,7 @@
     },
     {
       "Route": "js/site.js",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/js/site.js",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/js/site.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1791,7 +1791,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1807,7 +1807,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.bqjiyaj88i.css",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1828,7 +1828,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1852,7 +1852,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.css",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1873,7 +1873,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1889,7 +1889,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.css.c2jlpeoesf.map",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1910,7 +1910,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1934,7 +1934,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1955,7 +1955,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1971,7 +1971,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1992,7 +1992,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2008,7 +2008,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css.aexeepp0ev.map",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2029,7 +2029,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2053,7 +2053,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2074,7 +2074,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2090,7 +2090,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.erw9l3u2r3.css",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2111,7 +2111,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2135,7 +2135,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2156,7 +2156,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2172,7 +2172,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.ausgxo2sd3.map",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2193,7 +2193,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2217,7 +2217,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2238,7 +2238,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2254,7 +2254,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.d7shbmvgxk.css",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2275,7 +2275,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2299,7 +2299,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2320,7 +2320,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2336,7 +2336,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.cosvhxvwiu.map",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2357,7 +2357,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2381,7 +2381,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2402,7 +2402,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2418,7 +2418,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.k8d9w2qqmf.css",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2439,7 +2439,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2463,7 +2463,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2484,7 +2484,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2500,7 +2500,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css.fvhpjtyr6v.map",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2521,7 +2521,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2545,7 +2545,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2566,7 +2566,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2582,7 +2582,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.b7pk76d08c.css",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2603,7 +2603,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2627,7 +2627,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2648,7 +2648,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2664,7 +2664,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.fsbi9cje9m.map",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2685,7 +2685,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2709,7 +2709,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2730,7 +2730,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2746,7 +2746,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2767,7 +2767,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2783,7 +2783,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.ee0r1s7dh0.map",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2804,7 +2804,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2828,7 +2828,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2849,7 +2849,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2865,7 +2865,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2886,7 +2886,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2902,7 +2902,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.jd9uben2k1.map",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2923,7 +2923,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2947,7 +2947,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2968,7 +2968,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2984,7 +2984,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.dxx9fxp4il.css",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3005,7 +3005,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3029,7 +3029,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.rzd6atqjts.css",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3050,7 +3050,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3074,7 +3074,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.ub07r2b239.css",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3095,7 +3095,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3119,7 +3119,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3140,7 +3140,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3156,7 +3156,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3177,7 +3177,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3193,7 +3193,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css.r4e9w2rdcm.map",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3214,7 +3214,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3238,7 +3238,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.khv3u5hwcm.css",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3259,7 +3259,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3283,7 +3283,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3304,7 +3304,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3320,7 +3320,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.c2oey78nd0.map",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3341,7 +3341,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3365,7 +3365,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3386,7 +3386,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3402,7 +3402,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.lcd1t2u6c8.css",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3423,7 +3423,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3447,7 +3447,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3468,7 +3468,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3484,7 +3484,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.j5mq2jizvt.map",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3505,7 +3505,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3529,7 +3529,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3550,7 +3550,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3566,7 +3566,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.06098lyss8.css",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3587,7 +3587,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3611,7 +3611,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3632,7 +3632,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3648,7 +3648,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3669,7 +3669,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3685,7 +3685,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.nvvlpmu67g.map",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3706,7 +3706,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3730,7 +3730,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.tdbxkamptv.css",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3751,7 +3751,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3775,7 +3775,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.css",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3796,7 +3796,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3812,7 +3812,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.css.map",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3833,7 +3833,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3849,7 +3849,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.css.pj5nd1wqec.map",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3870,7 +3870,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3894,7 +3894,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3915,7 +3915,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3939,7 +3939,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.css",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3960,7 +3960,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3976,7 +3976,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.css.map",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3997,7 +3997,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4013,7 +4013,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.css.v0zj4ognzu.map",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4034,7 +4034,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4058,7 +4058,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.37tfw0ft22.css",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4079,7 +4079,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4103,7 +4103,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4124,7 +4124,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4140,7 +4140,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css.hrwsygsryq.map",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4161,7 +4161,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4185,7 +4185,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4206,7 +4206,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4222,7 +4222,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4243,7 +4243,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4259,7 +4259,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.ft3s53vfgj.map",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4280,7 +4280,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4304,7 +4304,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4325,7 +4325,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4341,7 +4341,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.pk9g2wxc8p.css",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4362,7 +4362,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4386,7 +4386,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.s35ty4nyc5.css",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4407,7 +4407,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4431,7 +4431,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.6cfz1n2cew.js",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4452,7 +4452,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4476,7 +4476,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4497,7 +4497,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4513,7 +4513,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js.6pdc2jztkx.map",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4534,7 +4534,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4558,7 +4558,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4579,7 +4579,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4595,7 +4595,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4616,7 +4616,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4640,7 +4640,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4661,7 +4661,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4677,7 +4677,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.iovd86k7lj.map",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4698,7 +4698,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4722,7 +4722,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4743,7 +4743,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4759,7 +4759,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4780,7 +4780,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4796,7 +4796,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js.kbrnm935zg.map",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4817,7 +4817,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4841,7 +4841,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4862,7 +4862,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4878,7 +4878,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.jj8uyg4cgr.js",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4899,7 +4899,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4923,7 +4923,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4944,7 +4944,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4960,7 +4960,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4981,7 +4981,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4997,7 +4997,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js.y7v9cxd14o.map",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5018,7 +5018,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5042,7 +5042,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.vr1egmr9el.js",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5063,7 +5063,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5087,7 +5087,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5108,7 +5108,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5124,7 +5124,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js.h1s4sie4z3.map",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5145,7 +5145,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5169,7 +5169,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js.map",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5190,7 +5190,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5206,7 +5206,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.63fj8s7r0e.js",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5227,7 +5227,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5251,7 +5251,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5272,7 +5272,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5288,7 +5288,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js.0j3bgjxly4.map",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5309,7 +5309,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5333,7 +5333,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js.map",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5354,7 +5354,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5370,7 +5370,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.notf2xhcfb.js",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5391,7 +5391,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5415,7 +5415,7 @@
     },
     {
       "Route": "lib/bootstrap/LICENSE",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/LICENSE",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/LICENSE",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5436,7 +5436,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5452,7 +5452,7 @@
     },
     {
       "Route": "lib/bootstrap/LICENSE.z6qzljqjd0",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/bootstrap/LICENSE",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/bootstrap/LICENSE",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5473,7 +5473,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5497,7 +5497,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.47otxtyo56.js",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5518,7 +5518,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5542,7 +5542,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5563,7 +5563,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5579,7 +5579,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.4v8eqarkd7.js",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5600,7 +5600,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5624,7 +5624,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5645,7 +5645,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5661,7 +5661,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/LICENSE.l3n5xuwxn8.txt",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5682,7 +5682,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5706,7 +5706,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/LICENSE.txt",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5727,7 +5727,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5743,7 +5743,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.ilo7uva0vt.js",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/jquery-validation/dist/additional-methods.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5764,7 +5764,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5788,7 +5788,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.js",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/jquery-validation/dist/additional-methods.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5809,7 +5809,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5825,7 +5825,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.min.js",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5846,7 +5846,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5862,7 +5862,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.min.qlccset4i1.js",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5883,7 +5883,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5907,7 +5907,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.js",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5928,7 +5928,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5944,7 +5944,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.lzl9nlhx6b.js",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5965,7 +5965,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5989,7 +5989,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.min.ag7o75518u.js",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6010,7 +6010,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6034,7 +6034,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.min.js",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6055,7 +6055,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6071,7 +6071,7 @@
     },
     {
       "Route": "lib/jquery-validation/LICENSE.md",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/jquery-validation/LICENSE.md",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/jquery-validation/LICENSE.md",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6092,7 +6092,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6108,7 +6108,7 @@
     },
     {
       "Route": "lib/jquery-validation/LICENSE.xzw0cte36n.md",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/jquery-validation/LICENSE.md",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/jquery-validation/LICENSE.md",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6129,7 +6129,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6153,7 +6153,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.0i3buxo5is.js",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/jquery/dist/jquery.js",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/jquery/dist/jquery.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6174,7 +6174,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6198,7 +6198,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.js",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/jquery/dist/jquery.js",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/jquery/dist/jquery.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6219,7 +6219,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6235,7 +6235,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.js",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/jquery/dist/jquery.min.js",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/jquery/dist/jquery.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6256,7 +6256,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6272,7 +6272,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.map",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/jquery/dist/jquery.min.map",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/jquery/dist/jquery.min.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6293,7 +6293,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6309,7 +6309,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.o1o13a6vjx.js",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/jquery/dist/jquery.min.js",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/jquery/dist/jquery.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6330,7 +6330,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6354,7 +6354,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.ttgo8qnofa.map",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/jquery/dist/jquery.min.map",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/jquery/dist/jquery.min.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6375,7 +6375,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6399,7 +6399,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.slim.2z0ns9nrw6.js",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/jquery/dist/jquery.slim.js",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/jquery/dist/jquery.slim.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6420,7 +6420,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6444,7 +6444,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.slim.js",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/jquery/dist/jquery.slim.js",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/jquery/dist/jquery.slim.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6465,7 +6465,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6481,7 +6481,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.slim.min.87fc7y1x7t.map",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/jquery/dist/jquery.slim.min.map",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/jquery/dist/jquery.slim.min.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6502,7 +6502,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6526,7 +6526,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.slim.min.js",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/jquery/dist/jquery.slim.min.js",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/jquery/dist/jquery.slim.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6547,7 +6547,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6563,7 +6563,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.slim.min.map",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/jquery/dist/jquery.slim.min.map",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/jquery/dist/jquery.slim.min.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6584,7 +6584,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6600,7 +6600,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.slim.min.muycvpuwrr.js",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/jquery/dist/jquery.slim.min.js",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/jquery/dist/jquery.slim.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6621,7 +6621,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6645,7 +6645,7 @@
     },
     {
       "Route": "lib/jquery/LICENSE.jfsiqqwiad.txt",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/jquery/LICENSE.txt",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/jquery/LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6666,7 +6666,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6690,7 +6690,7 @@
     },
     {
       "Route": "lib/jquery/LICENSE.txt",
-      "AssetFile": "/home/vlhn/RiderProjects/MESAPP/API/wwwroot/lib/jquery/LICENSE.txt",
+      "AssetFile": "/home/vlhn/dev/MESAPP/MESAPP/API/wwwroot/lib/jquery/LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6711,7 +6711,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:28:28 GMT"
+          "Value": "Sun, 20 Apr 2025 16:54:39 GMT"
         },
         {
           "Name": "Cache-Control",

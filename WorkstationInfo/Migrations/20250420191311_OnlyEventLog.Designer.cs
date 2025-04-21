@@ -12,8 +12,8 @@ using WorkstationInfo.Database;
 namespace WorkstationInfo.Migrations
 {
     [DbContext(typeof(WorkstationInfoDbContext))]
-    [Migration("20250311195354_AddWorkorderEventLogKey")]
-    partial class AddWorkorderEventLogKey
+    [Migration("20250420191311_OnlyEventLog")]
+    partial class OnlyEventLog
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -35,7 +35,8 @@ namespace WorkstationInfo.Migrations
 
                     b.Property<string>("SensorName")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasMaxLength(50)
+                        .HasColumnType("character varying(50)");
 
                     b.Property<int>("WorkstationId")
                         .HasColumnType("integer");
@@ -44,7 +45,7 @@ namespace WorkstationInfo.Migrations
 
                     b.HasIndex("WorkstationId");
 
-                    b.ToTable("Sensors");
+                    b.ToTable("sensor", "mes_db");
                 });
 
             modelBuilder.Entity("WorkstationInfo.Entities.Workorder", b =>
@@ -55,9 +56,8 @@ namespace WorkstationInfo.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("WorkorderId"));
 
-                    b.Property<string>("CurrentScodeValue")
-                        .IsRequired()
-                        .HasColumnType("text");
+                    b.Property<int>("CurrentScodeValue")
+                        .HasColumnType("integer");
 
                     b.Property<DateTime>("FinishDate")
                         .HasColumnType("timestamp with time zone");
@@ -79,73 +79,14 @@ namespace WorkstationInfo.Migrations
 
                     b.HasKey("WorkorderId");
 
-                    b.HasIndex("WorkstationId");
-
-                    b.ToTable("Workorders");
-                });
-
-            modelBuilder.Entity("WorkstationInfo.Entities.WorkorderEventLog", b =>
-                {
-                    b.Property<int>("LogId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("LogId"));
-
-                    b.Property<DateTime>("EndTime")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<string>("ScodeValue")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<DateTime>("StartTime")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<int>("WorkorderId")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("WorkstationId")
-                        .HasColumnType("integer");
-
-                    b.HasKey("LogId");
-
-                    b.HasIndex("WorkorderId");
+                    b.HasIndex("IsActive");
 
                     b.HasIndex("WorkstationId");
 
-                    b.ToTable("WorkorderEventLogs");
+                    b.ToTable("workorder", "mes_db");
                 });
 
-            modelBuilder.Entity("WorkstationInfo.Entities.Workstation", b =>
-                {
-                    b.Property<int>("WorkstationId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("WorkstationId"));
-
-                    b.Property<bool>("IsActive")
-                        .HasColumnType("boolean");
-
-                    b.Property<string>("ScodeValue")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("SerialNumber")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("WorkstationName")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.HasKey("WorkstationId");
-
-                    b.ToTable("Workstations");
-                });
-
-            modelBuilder.Entity("WorkstationInfo.Entities.WorkstationPerformance", b =>
+            modelBuilder.Entity("WorkstationInfo.Entities.WorkorderPerformanceLog", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -154,19 +95,24 @@ namespace WorkstationInfo.Migrations
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.Property<decimal>("Availability")
-                        .HasColumnType("numeric");
+                        .HasPrecision(8, 4)
+                        .HasColumnType("numeric(8,4)");
 
                     b.Property<decimal>("CycleTime")
-                        .HasColumnType("numeric");
+                        .HasPrecision(10, 2)
+                        .HasColumnType("numeric(10,2)");
 
                     b.Property<decimal>("Oee")
-                        .HasColumnType("numeric");
+                        .HasPrecision(8, 4)
+                        .HasColumnType("numeric(8,4)");
 
                     b.Property<decimal>("Performance")
-                        .HasColumnType("numeric");
+                        .HasPrecision(8, 4)
+                        .HasColumnType("numeric(8,4)");
 
                     b.Property<decimal>("Quality")
-                        .HasColumnType("numeric");
+                        .HasPrecision(8, 4)
+                        .HasColumnType("numeric(8,4)");
 
                     b.Property<DateTime>("RecordedAt")
                         .HasColumnType("timestamp with time zone");
@@ -180,13 +126,89 @@ namespace WorkstationInfo.Migrations
                     b.Property<int>("WorkstationId")
                         .HasColumnType("integer");
 
+                    b.Property<TimeSpan?>("total_net_available_time")
+                        .HasColumnType("interval");
+
+                    b.Property<TimeSpan?>("total_net_operation_time")
+                        .HasColumnType("interval");
+
+                    b.Property<TimeSpan?>("total_planned_downtime")
+                        .HasColumnType("interval");
+
+                    b.Property<TimeSpan?>("total_startup_downtime")
+                        .HasColumnType("interval");
+
+                    b.Property<TimeSpan?>("total_unplanned_downtime")
+                        .HasColumnType("interval");
+
                     b.HasKey("Id");
 
                     b.HasIndex("WorkorderId");
 
                     b.HasIndex("WorkstationId");
 
-                    b.ToTable("WorkstationPerformances");
+                    b.ToTable("workorder_performance_log", "mes_db");
+                });
+
+            modelBuilder.Entity("WorkstationInfo.Entities.WorkorderStateLog", b =>
+                {
+                    b.Property<int>("LogId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("LogId"));
+
+                    b.Property<DateTime>("ChangedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<int>("ChangedByOperatorId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("NewScodeId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("OldScodeId")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("Reason")
+                        .HasColumnType("text");
+
+                    b.Property<int>("WorkstationId")
+                        .HasColumnType("integer");
+
+                    b.HasKey("LogId");
+
+                    b.HasIndex("WorkstationId");
+
+                    b.ToTable("workorder_state_log", "mes_db");
+                });
+
+            modelBuilder.Entity("WorkstationInfo.Entities.Workstation", b =>
+                {
+                    b.Property<int>("WorkstationId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("WorkstationId"));
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("boolean");
+
+                    b.Property<string>("SerialNumber")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("WorkstationName")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
+
+                    b.HasKey("WorkstationId");
+
+                    b.HasIndex("SerialNumber")
+                        .IsUnique();
+
+                    b.ToTable("Workstations");
                 });
 
             modelBuilder.Entity("WorkstationInfo.Entities.Sensor", b =>
@@ -211,29 +233,10 @@ namespace WorkstationInfo.Migrations
                     b.Navigation("Workstation");
                 });
 
-            modelBuilder.Entity("WorkstationInfo.Entities.WorkorderEventLog", b =>
+            modelBuilder.Entity("WorkstationInfo.Entities.WorkorderPerformanceLog", b =>
                 {
                     b.HasOne("WorkstationInfo.Entities.Workorder", "Workorder")
-                        .WithMany("EventLogs")
-                        .HasForeignKey("WorkorderId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("WorkstationInfo.Entities.Workstation", "Workstation")
-                        .WithMany()
-                        .HasForeignKey("WorkstationId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Workorder");
-
-                    b.Navigation("Workstation");
-                });
-
-            modelBuilder.Entity("WorkstationInfo.Entities.WorkstationPerformance", b =>
-                {
-                    b.HasOne("WorkstationInfo.Entities.Workorder", "Workorder")
-                        .WithMany()
+                        .WithMany("PerformanceRecords")
                         .HasForeignKey("WorkorderId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -249,9 +252,20 @@ namespace WorkstationInfo.Migrations
                     b.Navigation("Workstation");
                 });
 
+            modelBuilder.Entity("WorkstationInfo.Entities.WorkorderStateLog", b =>
+                {
+                    b.HasOne("WorkstationInfo.Entities.Workstation", "Workstation")
+                        .WithMany("StateLogs")
+                        .HasForeignKey("WorkstationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Workstation");
+                });
+
             modelBuilder.Entity("WorkstationInfo.Entities.Workorder", b =>
                 {
-                    b.Navigation("EventLogs");
+                    b.Navigation("PerformanceRecords");
                 });
 
             modelBuilder.Entity("WorkstationInfo.Entities.Workstation", b =>
@@ -259,6 +273,8 @@ namespace WorkstationInfo.Migrations
                     b.Navigation("PerformanceRecords");
 
                     b.Navigation("Sensors");
+
+                    b.Navigation("StateLogs");
 
                     b.Navigation("Workorders");
                 });

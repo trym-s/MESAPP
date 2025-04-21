@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/vlhn/RiderProjects/MESAPP/OperatorPanel/OperatorPanel.csproj": {}
+    "/home/vlhn/dev/MESAPP/MESAPP/OperatorPanel/OperatorPanel.csproj": {}
   },
   "projects": {
-    "/home/vlhn/RiderProjects/MESAPP/Infrastructure/Infrastructure.csproj": {
+    "/home/vlhn/dev/MESAPP/MESAPP/Infrastructure/Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/vlhn/RiderProjects/MESAPP/Infrastructure/Infrastructure.csproj",
+        "projectUniqueName": "/home/vlhn/dev/MESAPP/MESAPP/Infrastructure/Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "/home/vlhn/RiderProjects/MESAPP/Infrastructure/Infrastructure.csproj",
+        "projectPath": "/home/vlhn/dev/MESAPP/MESAPP/Infrastructure/Infrastructure.csproj",
         "packagesPath": "/home/vlhn/.nuget/packages/",
-        "outputPath": "/home/vlhn/RiderProjects/MESAPP/Infrastructure/obj/",
+        "outputPath": "/home/vlhn/dev/MESAPP/MESAPP/Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/vlhn/.nuget/NuGet/NuGet.Config"
@@ -38,7 +38,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -46,15 +46,15 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.2, )"
+              "version": "[8.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.Abstractions": {
               "target": "Package",
-              "version": "[8.0.2, )"
+              "version": "[8.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "target": "Package",
-              "version": "[8.0.2, )"
+              "version": "[8.0.0, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
@@ -62,19 +62,19 @@
             },
             "Microsoft.Extensions.Configuration.Binder": {
               "target": "Package",
-              "version": "[8.0.2, )"
+              "version": "[8.0.0, )"
             },
             "Microsoft.Extensions.Configuration.Json": {
               "target": "Package",
-              "version": "[8.0.1, )"
+              "version": "[8.0.0, )"
             },
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
-              "version": "[8.0.1, )"
+              "version": "[8.0.0, )"
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
-              "version": "[8.0.2, )"
+              "version": "[8.0.0, )"
             }
           },
           "imports": [
@@ -91,11 +91,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.14, 8.0.14]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.14, 8.0.14]"
+              "version": "[8.0.15, 8.0.15]"
             }
           ],
           "frameworkReferences": {
@@ -103,18 +99,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.104/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/vlhn/RiderProjects/MESAPP/OperatorPanel/OperatorPanel.csproj": {
+    "/home/vlhn/dev/MESAPP/MESAPP/OperatorPanel/OperatorPanel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/vlhn/RiderProjects/MESAPP/OperatorPanel/OperatorPanel.csproj",
+        "projectUniqueName": "/home/vlhn/dev/MESAPP/MESAPP/OperatorPanel/OperatorPanel.csproj",
         "projectName": "OperatorPanel",
-        "projectPath": "/home/vlhn/RiderProjects/MESAPP/OperatorPanel/OperatorPanel.csproj",
+        "projectPath": "/home/vlhn/dev/MESAPP/MESAPP/OperatorPanel/OperatorPanel.csproj",
         "packagesPath": "/home/vlhn/.nuget/packages/",
-        "outputPath": "/home/vlhn/RiderProjects/MESAPP/OperatorPanel/obj/",
+        "outputPath": "/home/vlhn/dev/MESAPP/MESAPP/OperatorPanel/obj/",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "configFilePaths": [
@@ -131,16 +127,16 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/vlhn/RiderProjects/MESAPP/Infrastructure/Infrastructure.csproj": {
-                "projectPath": "/home/vlhn/RiderProjects/MESAPP/Infrastructure/Infrastructure.csproj"
+              "/home/vlhn/dev/MESAPP/MESAPP/Infrastructure/Infrastructure.csproj": {
+                "projectPath": "/home/vlhn/dev/MESAPP/MESAPP/Infrastructure/Infrastructure.csproj"
               }
             }
           },
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "/home/vlhn/RiderProjects/MESAPP/Infrastructure/Infrastructure.csproj": {
-                "projectPath": "/home/vlhn/RiderProjects/MESAPP/Infrastructure/Infrastructure.csproj"
+              "/home/vlhn/dev/MESAPP/MESAPP/Infrastructure/Infrastructure.csproj": {
+                "projectPath": "/home/vlhn/dev/MESAPP/MESAPP/Infrastructure/Infrastructure.csproj"
               }
             }
           }
@@ -155,19 +151,39 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[12.0.0-preview1, )"
+            },
             "MediatR": {
               "target": "Package",
               "version": "[12.4.1, )"
             },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
-              "version": "[8.0.1, )"
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
             }
           },
           "imports": [
@@ -184,11 +200,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.14, 8.0.14]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.14, 8.0.14]"
+              "version": "[8.0.15, 8.0.15]"
             }
           ],
           "frameworkReferences": {
@@ -199,18 +211,38 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.104/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.203/PortableRuntimeIdentifierGraph.json"
         },
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[12.0.0-preview1, )"
+            },
             "MediatR": {
               "target": "Package",
               "version": "[12.4.1, )"
             },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
-              "version": "[8.0.1, )"
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
             }
           },
           "imports": [
@@ -224,12 +256,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[9.0.3, 9.0.3]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -238,7 +264,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.104/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

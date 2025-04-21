@@ -53,9 +53,8 @@ namespace WorkstationInfo.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("WorkorderId"));
 
-                    b.Property<string>("CurrentScodeValue")
-                        .IsRequired()
-                        .HasColumnType("text");
+                    b.Property<int>("CurrentScodeValue")
+                        .HasColumnType("integer");
 
                     b.Property<DateTime>("FinishDate")
                         .HasColumnType("timestamp with time zone");
@@ -82,39 +81,6 @@ namespace WorkstationInfo.Migrations
                     b.HasIndex("WorkstationId");
 
                     b.ToTable("workorder", "mes_db");
-                });
-
-            modelBuilder.Entity("WorkstationInfo.Entities.WorkorderEventLog", b =>
-                {
-                    b.Property<int>("LogId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("LogId"));
-
-                    b.Property<DateTime>("EndTime")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<string>("ScodeValue")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<DateTime>("StartTime")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<int>("WorkorderId")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("WorkstationId")
-                        .HasColumnType("integer");
-
-                    b.HasKey("LogId");
-
-                    b.HasIndex("WorkorderId");
-
-                    b.HasIndex("WorkstationId");
-
-                    b.ToTable("workorder_event_log", "mes_db");
                 });
 
             modelBuilder.Entity("WorkstationInfo.Entities.WorkorderPerformanceLog", b =>
@@ -148,22 +114,7 @@ namespace WorkstationInfo.Migrations
                     b.Property<DateTime>("RecordedAt")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<TimeSpan?>("TotalNetAvailableTime")
-                        .HasColumnType("interval");
-
-                    b.Property<TimeSpan?>("TotalNetOperationTime")
-                        .HasColumnType("interval");
-
-                    b.Property<TimeSpan?>("TotalPlannedDowntime")
-                        .HasColumnType("interval");
-
-                    b.Property<TimeSpan?>("TotalStartupDowntime")
-                        .HasColumnType("interval");
-
                     b.Property<TimeSpan>("TotalTime")
-                        .HasColumnType("interval");
-
-                    b.Property<TimeSpan?>("TotalUnplannedDowntime")
                         .HasColumnType("interval");
 
                     b.Property<int>("WorkorderId")
@@ -172,13 +123,28 @@ namespace WorkstationInfo.Migrations
                     b.Property<int>("WorkstationId")
                         .HasColumnType("integer");
 
+                    b.Property<TimeSpan?>("total_net_available_time")
+                        .HasColumnType("interval");
+
+                    b.Property<TimeSpan?>("total_net_operation_time")
+                        .HasColumnType("interval");
+
+                    b.Property<TimeSpan?>("total_planned_downtime")
+                        .HasColumnType("interval");
+
+                    b.Property<TimeSpan?>("total_startup_downtime")
+                        .HasColumnType("interval");
+
+                    b.Property<TimeSpan?>("total_unplanned_downtime")
+                        .HasColumnType("interval");
+
                     b.HasKey("Id");
 
                     b.HasIndex("WorkorderId");
 
                     b.HasIndex("WorkstationId");
 
-                    b.ToTable("workstation_performance", "mes_db");
+                    b.ToTable("workorder_performance_log", "mes_db");
                 });
 
             modelBuilder.Entity("WorkstationInfo.Entities.WorkorderStateLog", b =>
@@ -211,7 +177,7 @@ namespace WorkstationInfo.Migrations
 
                     b.HasIndex("WorkstationId");
 
-                    b.ToTable("workstation_state_log", "mes_db");
+                    b.ToTable("workorder_state_log", "mes_db");
                 });
 
             modelBuilder.Entity("WorkstationInfo.Entities.Workstation", b =>
@@ -224,10 +190,6 @@ namespace WorkstationInfo.Migrations
 
                     b.Property<bool>("IsActive")
                         .HasColumnType("boolean");
-
-                    b.Property<string>("ScodeValue")
-                        .IsRequired()
-                        .HasColumnType("text");
 
                     b.Property<string>("SerialNumber")
                         .IsRequired()
@@ -243,7 +205,7 @@ namespace WorkstationInfo.Migrations
                     b.HasIndex("SerialNumber")
                         .IsUnique();
 
-                    b.ToTable("workstation", "mes_db");
+                    b.ToTable("Workstations");
                 });
 
             modelBuilder.Entity("WorkstationInfo.Entities.Sensor", b =>
@@ -264,25 +226,6 @@ namespace WorkstationInfo.Migrations
                         .HasForeignKey("WorkstationId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Workstation");
-                });
-
-            modelBuilder.Entity("WorkstationInfo.Entities.WorkorderEventLog", b =>
-                {
-                    b.HasOne("WorkstationInfo.Entities.Workorder", "Workorder")
-                        .WithMany("EventLogs")
-                        .HasForeignKey("WorkorderId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("WorkstationInfo.Entities.Workstation", "Workstation")
-                        .WithMany()
-                        .HasForeignKey("WorkstationId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Workorder");
 
                     b.Navigation("Workstation");
                 });
@@ -319,8 +262,6 @@ namespace WorkstationInfo.Migrations
 
             modelBuilder.Entity("WorkstationInfo.Entities.Workorder", b =>
                 {
-                    b.Navigation("EventLogs");
-
                     b.Navigation("PerformanceRecords");
                 });
 

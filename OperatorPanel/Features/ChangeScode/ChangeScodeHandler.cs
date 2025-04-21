@@ -2,9 +2,7 @@ using MediatR;
 using Microsoft.EntityFrameworkCore;
 using OperatorPanel.Database;
 using OperatorPanel.Entities;
-
 namespace OperatorPanel.Features.Commands.ChangeScode;
-
 public class ChangeScodeHandler : IRequestHandler<ChangeScodeCommand, ChangeScodeResult>
 {
     private readonly OperatorPanelDbContext _context;
@@ -31,27 +29,36 @@ public class ChangeScodeHandler : IRequestHandler<ChangeScodeCommand, ChangeScod
         if (activeWorkorder == null)
             throw new InvalidOperationException("No active workorder found for this workstation.");
 
-        int oldScode = activeWorkorder.CurrentScodeValue;  // Eğer DB'de hâlâ string olarak tutuluyorsa
-        //Eğer yeni scode zaten aktif olan scode ile aynıysa:
+        int oldScode = activeWorkorder.CurrentScodeValue;
+
         if (oldScode == request.NewScode)
         {
             return new ChangeScodeResult
             {
                 OldScode = oldScode,
                 NewScode = request.NewScode,
-                Message = "Scode is already set to this value." // 👈 Ek alan
+                Message = "Scode is already set to this value."
             };
         }
-        // Yeni scode’u güncelle
-        activeWorkorder.CurrentScodeValue = request.NewScode;
 
-        // Diğer iş emirlerini 1-0 yap (yani 10)
+        Console.WriteLine($"[DEBUG] OldScode = {oldScode}, NewScode = {request.NewScode}");
+
+        // Güncellemeyi merkezden yap: tüm workorder'ları tara
         foreach (var wo in workstation.Workorders)
         {
-            if (wo.WorkorderId != activeWorkorder.WorkorderId)
+            if (wo.IsActive)
+            {
+                wo.CurrentScodeValue = request.NewScode;
+                Console.WriteLine($"[DEBUG] UPDATED ACTIVE: WorkorderId={wo.WorkorderId}, NewScode={wo.CurrentScodeValue}");
+            }
+            else
+            {
                 wo.CurrentScodeValue = 10;
+                Console.WriteLine($"[DEBUG] RESET INACTIVE: WorkorderId={wo.WorkorderId}, NewScode=10");
+            }
         }
 
+        // Log oluştur
         var log = new WorkorderStateLog
         {
             WorkstationId = request.WorkstationId,
@@ -64,13 +71,21 @@ public class ChangeScodeHandler : IRequestHandler<ChangeScodeCommand, ChangeScod
         };
 
         _context.WorkorderStateLogs.Add(log);
+
+        // EF takip durumlarını yaz (debug için çok değerli)
+        var tracked = _context.ChangeTracker.Entries<Workorder>().ToList();
+        foreach (var e in tracked)
+        {
+            Console.WriteLine($"[TRACKED] Entity={e.Entity.WorkorderId}, State={e.State}, Scode={e.Entity.CurrentScodeValue}");
+        }
+
         await _context.SaveChangesAsync(cancellationToken);
 
         return new ChangeScodeResult
         {
             OldScode = oldScode,
             NewScode = request.NewScode,
-            Message = "Scode updated successfully." 
+            Message = "Scode updated successfully."
         };
     }
 }

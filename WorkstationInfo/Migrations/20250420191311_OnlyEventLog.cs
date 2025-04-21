@@ -7,21 +7,23 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace WorkstationInfo.Migrations
 {
     /// <inheritdoc />
-    public partial class AddWorkorderEventLogKey : Migration
+    public partial class OnlyEventLog : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.EnsureSchema(
+                name: "mes_db");
+
             migrationBuilder.CreateTable(
                 name: "Workstations",
                 columns: table => new
                 {
                     WorkstationId = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    WorkstationName = table.Column<string>(type: "text", nullable: false),
+                    WorkstationName = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: false),
                     IsActive = table.Column<bool>(type: "boolean", nullable: false),
-                    SerialNumber = table.Column<string>(type: "text", nullable: false),
-                    ScodeValue = table.Column<string>(type: "text", nullable: false)
+                    SerialNumber = table.Column<string>(type: "text", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -29,19 +31,20 @@ namespace WorkstationInfo.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Sensors",
+                name: "sensor",
+                schema: "mes_db",
                 columns: table => new
                 {
                     SensorId = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     WorkstationId = table.Column<int>(type: "integer", nullable: false),
-                    SensorName = table.Column<string>(type: "text", nullable: false)
+                    SensorName = table.Column<string>(type: "character varying(50)", maxLength: 50, nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Sensors", x => x.SensorId);
+                    table.PrimaryKey("PK_sensor", x => x.SensorId);
                     table.ForeignKey(
-                        name: "FK_Sensors_Workstations_WorkstationId",
+                        name: "FK_sensor_Workstations_WorkstationId",
                         column: x => x.WorkstationId,
                         principalTable: "Workstations",
                         principalColumn: "WorkstationId",
@@ -49,7 +52,8 @@ namespace WorkstationInfo.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Workorders",
+                name: "workorder",
+                schema: "mes_db",
                 columns: table => new
                 {
                     WorkorderId = table.Column<int>(type: "integer", nullable: false)
@@ -60,13 +64,13 @@ namespace WorkstationInfo.Migrations
                     IsActive = table.Column<bool>(type: "boolean", nullable: false),
                     StartDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     FinishDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
-                    CurrentScodeValue = table.Column<string>(type: "text", nullable: false)
+                    CurrentScodeValue = table.Column<int>(type: "integer", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Workorders", x => x.WorkorderId);
+                    table.PrimaryKey("PK_workorder", x => x.WorkorderId);
                     table.ForeignKey(
-                        name: "FK_Workorders_Workstations_WorkstationId",
+                        name: "FK_workorder_Workstations_WorkstationId",
                         column: x => x.WorkstationId,
                         principalTable: "Workstations",
                         principalColumn: "WorkstationId",
@@ -74,28 +78,24 @@ namespace WorkstationInfo.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "WorkorderEventLogs",
+                name: "workorder_state_log",
+                schema: "mes_db",
                 columns: table => new
                 {
                     LogId = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    WorkorderId = table.Column<int>(type: "integer", nullable: false),
                     WorkstationId = table.Column<int>(type: "integer", nullable: false),
-                    ScodeValue = table.Column<string>(type: "text", nullable: false),
-                    StartTime = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
-                    EndTime = table.Column<DateTime>(type: "timestamp with time zone", nullable: false)
+                    OldScodeId = table.Column<int>(type: "integer", nullable: false),
+                    NewScodeId = table.Column<int>(type: "integer", nullable: false),
+                    ChangedByOperatorId = table.Column<int>(type: "integer", nullable: false),
+                    ChangedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    Reason = table.Column<string>(type: "text", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_WorkorderEventLogs", x => x.LogId);
+                    table.PrimaryKey("PK_workorder_state_log", x => x.LogId);
                     table.ForeignKey(
-                        name: "FK_WorkorderEventLogs_Workorders_WorkorderId",
-                        column: x => x.WorkorderId,
-                        principalTable: "Workorders",
-                        principalColumn: "WorkorderId",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_WorkorderEventLogs_Workstations_WorkstationId",
+                        name: "FK_workorder_state_log_Workstations_WorkstationId",
                         column: x => x.WorkstationId,
                         principalTable: "Workstations",
                         principalColumn: "WorkstationId",
@@ -103,7 +103,8 @@ namespace WorkstationInfo.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "WorkstationPerformances",
+                name: "workorder_performance_log",
+                schema: "mes_db",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "integer", nullable: false)
@@ -111,75 +112,97 @@ namespace WorkstationInfo.Migrations
                     WorkstationId = table.Column<int>(type: "integer", nullable: false),
                     WorkorderId = table.Column<int>(type: "integer", nullable: false),
                     RecordedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
-                    Oee = table.Column<decimal>(type: "numeric", nullable: false),
-                    Performance = table.Column<decimal>(type: "numeric", nullable: false),
-                    Quality = table.Column<decimal>(type: "numeric", nullable: false),
-                    Availability = table.Column<decimal>(type: "numeric", nullable: false),
-                    TotalTime = table.Column<TimeSpan>(type: "interval", nullable: false),
-                    CycleTime = table.Column<decimal>(type: "numeric", nullable: false)
+                    Oee = table.Column<decimal>(type: "numeric(8,4)", precision: 8, scale: 4, nullable: false),
+                    Performance = table.Column<decimal>(type: "numeric(8,4)", precision: 8, scale: 4, nullable: false),
+                    Quality = table.Column<decimal>(type: "numeric(8,4)", precision: 8, scale: 4, nullable: false),
+                    Availability = table.Column<decimal>(type: "numeric(8,4)", precision: 8, scale: 4, nullable: false),
+                    CycleTime = table.Column<decimal>(type: "numeric(10,2)", precision: 10, scale: 2, nullable: false),
+                    total_startup_downtime = table.Column<TimeSpan>(type: "interval", nullable: true),
+                    total_planned_downtime = table.Column<TimeSpan>(type: "interval", nullable: true),
+                    total_unplanned_downtime = table.Column<TimeSpan>(type: "interval", nullable: true),
+                    total_net_available_time = table.Column<TimeSpan>(type: "interval", nullable: true),
+                    total_net_operation_time = table.Column<TimeSpan>(type: "interval", nullable: true),
+                    TotalTime = table.Column<TimeSpan>(type: "interval", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_WorkstationPerformances", x => x.Id);
+                    table.PrimaryKey("PK_workorder_performance_log", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_WorkstationPerformances_Workorders_WorkorderId",
-                        column: x => x.WorkorderId,
-                        principalTable: "Workorders",
-                        principalColumn: "WorkorderId",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_WorkstationPerformances_Workstations_WorkstationId",
+                        name: "FK_workorder_performance_log_Workstations_WorkstationId",
                         column: x => x.WorkstationId,
                         principalTable: "Workstations",
                         principalColumn: "WorkstationId",
                         onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_workorder_performance_log_workorder_WorkorderId",
+                        column: x => x.WorkorderId,
+                        principalSchema: "mes_db",
+                        principalTable: "workorder",
+                        principalColumn: "WorkorderId",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Sensors_WorkstationId",
-                table: "Sensors",
+                name: "IX_sensor_WorkstationId",
+                schema: "mes_db",
+                table: "sensor",
                 column: "WorkstationId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_WorkorderEventLogs_WorkorderId",
-                table: "WorkorderEventLogs",
+                name: "IX_workorder_IsActive",
+                schema: "mes_db",
+                table: "workorder",
+                column: "IsActive");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_workorder_WorkstationId",
+                schema: "mes_db",
+                table: "workorder",
+                column: "WorkstationId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_workorder_performance_log_WorkorderId",
+                schema: "mes_db",
+                table: "workorder_performance_log",
                 column: "WorkorderId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_WorkorderEventLogs_WorkstationId",
-                table: "WorkorderEventLogs",
+                name: "IX_workorder_performance_log_WorkstationId",
+                schema: "mes_db",
+                table: "workorder_performance_log",
                 column: "WorkstationId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Workorders_WorkstationId",
-                table: "Workorders",
+                name: "IX_workorder_state_log_WorkstationId",
+                schema: "mes_db",
+                table: "workorder_state_log",
                 column: "WorkstationId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_WorkstationPerformances_WorkorderId",
-                table: "WorkstationPerformances",
-                column: "WorkorderId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_WorkstationPerformances_WorkstationId",
-                table: "WorkstationPerformances",
-                column: "WorkstationId");
+                name: "IX_Workstations_SerialNumber",
+                table: "Workstations",
+                column: "SerialNumber",
+                unique: true);
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Sensors");
+                name: "sensor",
+                schema: "mes_db");
 
             migrationBuilder.DropTable(
-                name: "WorkorderEventLogs");
+                name: "workorder_performance_log",
+                schema: "mes_db");
 
             migrationBuilder.DropTable(
-                name: "WorkstationPerformances");
+                name: "workorder_state_log",
+                schema: "mes_db");
 
             migrationBuilder.DropTable(
-                name: "Workorders");
+                name: "workorder",
+                schema: "mes_db");
 
             migrationBuilder.DropTable(
                 name: "Workstations");

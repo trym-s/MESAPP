@@ -8,7 +8,7 @@ public static class OperatorPanelModule
 {
     public static IServiceCollection AddOperatorPanelModule(this IServiceCollection services, IConfiguration configuration)
     {
-        // DbContext bağlama
+        // DbContext
         services.AddDbContext<OperatorPanelDbContext>(options =>
             options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
 

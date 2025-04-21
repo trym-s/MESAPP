@@ -24,7 +24,7 @@ public class OperatorActionsController : ControllerBase
             return BadRequest("URL workstation ID ile body eşleşmiyor.");
 
         ChangeScodeResult result = await _mediator.Send(command);
-
+        
         return Ok(new
         {
             message = "Scode updated successfully.",
