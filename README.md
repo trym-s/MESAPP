@@ -1,65 +1,94 @@
-Gereksinimler:
-- .NET 8
-- PostgreSQL 15+
+MESApp Kurulum ve Başlangıç Rehberi
+Gereksinimler
+    .NET 8
+    PostgreSQL 15+
+    MQTT destekli Python scripti (Raspberry Pi gibi cihazlarda çalıştırmak için)
 
+    [Opsiyonel] Postman (API testleri için)
 
-1. GEREKSINIMLERIN YUKLENMESI
-#### .NET 8 
+1. GEREKSİNİMLERİN YÜKLENMESİ
+✅ .NET 8
 
-[https://dotnet.microsoft.com/en-us/download/dotnet/8.0] adresine git.
-“.NET 8 SDK (x64)” paketini indir ve yükle.
-Kurulum sonrası Başlat > Komut İstemi aç ve şunu yaz:
+    https://dotnet.microsoft.com/en-us/download/dotnet/8.0 adresine git.
+
+    “.NET 8 SDK (x64)” paketini indir ve yükle.
+
+    Kurulum sonrası terminal aç (Başlat > Komut İstemi) ve kontrol et:
+
 dotnet --version
-Sonuç: 8.x.x yazmalı.
 
+Beklenen çıktı: 8.x.x
+✅ PostgreSQL 15+ ve pgAdmin
 
-#### PostgreSQL 15+
-https://www.postgresql.org/download/windows/ adresinden PostgreSQL'i indir.
-https://www.pgadmin.org/download/pgadmin-4-windows/ adresinden pgAdmin indir.
+    https://www.postgresql.org/download/windows/ üzerinden PostgreSQL’i indir.
 
-2. *VERİTABANININ YÜKLENMESİ*
-📁 Dump dosyasını yüklemek:
+    https://www.pgadmin.org/download/pgadmin-4-windows/ üzerinden pgAdmin’i yükle.
+
+2. VERİTABANININ YÜKLENMESİ
+
+📁 Dump dosyasını pgAdmin ile yüklemek için:
+
     pgAdmin uygulamasını aç.
-    Sol menüden Servers > Databases sağ tıkla → Create > Database:
-        Database Name: upeys
+
+    Sol menüden Servers > Databases → sağ tık → Create > Database:
+
+        Database Name: mes_db
+
     Üst menüden Tools > Query Tool aç.
-    Sol üstte File > Open menüsünden projenin ana dizininde olan dump.sql dosyasını seç.
-    Sağ üstten ⚡ (Execute) tuşuna bas.
-    Hata yoksa veritabanı hazır.
 
-3. PROJEYI AÇ (VISUAL STUDIO/RIDER YUKLU DEĞİLSE)
+    File > Open ile projedeki dump.sql dosyasını seç.
 
-cmd veya PowerShell aç → proje klasörüne geç:
+    Sağ üstten ⚡ Execute tuşuna bas.
 
-cd "C:\\Users\\KullaniciAdi\\Downloads\\MesApp"
-NuGet paketlerini yükle:
+    Hata yoksa veritabanı hazır!
+
+3. PROJEYİ AÇ (Terminal ile)
+
+    cmd veya PowerShell aç → proje klasörüne geç:
+
+cd "C:\Users\KullaniciAdi\Downloads\MesApp"
+
+    NuGet paketlerini yükle:
+
 dotnet restore
 
-appsettings.Development.json dosyasındaki bağlantı bilgilerini kontrol et:
+    appsettings.Development.json içinde veritabanı bağlantısını kontrol et:
+
 "ConnectionStrings": {
   "DefaultConnection": "Host=localhost;Database=mes_db;Username=postgres;Password=yourpassword"
 }
 
-Uygulamayı başlat:
+    Uygulamayı başlat:
+
 dotnet run --project MesApp.API
 
-Tarayıcıdan şu URL’yi açarak test et:
+    Tarayıcıdan test et:
+
 http://localhost:5031/api/workstations/1
 
-3. (OPSİYONEL) VISUAL STUDIO VEYA RIDER ILE
+4. MQTT İLE ENTEGRASYON
 
-Visual Studio 2022+ yüklü ise .sln dosyasına çift tıkla.
-MesApp.API projesini “Startup Project” olarak ayarla.
-Ctrl + F5 tuşlarıyla çalıştır.
+Python scripti ile seri porttan gelen veriler MQTT üzerinden .NET backend'e aktarılır.
+⚙️ Python MQTT Scripti
 
-4. TEST
-Projeyi çalıştırdıktan sonra(visaul studio'da arayüzden run veya terminalden dotnet run ile)
-eğer bir hata alınmaz ise .NET projesi ve PostgreSQL veritabanı bağlantısı sağlanmıştır.
-
-API TEST
-https://www.postman.com/ adresinden Postman'i indirip kurun. Yeni bir hesap oluşturun.
-Postman üyeliği oluşturulduktan sonra yeni bir workspace ile oluşturulan Endpointler test edileblir.
-örn: GET http://localhost:5031/api/workstations/1
-ile idsi 1 olan workstation için detaylara ulaşılacak.
+Raspberry Pi veya Linux tabanlı cihazlarda:
+RaspberryPi/script.py  ismindeki dosyayı çalıştırabilirsiniz:
 
 
+5. (OPSİYONEL) VISUAL STUDIO veya RIDER İLE
+
+    .sln dosyasına çift tıkla.
+
+    MesApp.API projesini “Startup Project” yap.
+
+    Ctrl + F5 ile başlat.
+
+6. API TESTİ
+
+    https://www.postman.com/ üzerinden Postman'i indir.
+
+    Yeni bir workspace oluştur.
+
+    Örnek istek:
+
+GET http://localhost:5031/api/workstations/1
