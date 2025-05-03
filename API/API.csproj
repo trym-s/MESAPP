@@ -8,6 +8,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
+      <ProjectReference Include="..\MQTTStreaming\MQTTStreaming.csproj" />
       <ProjectReference Include="..\OperatorPanel\OperatorPanel.csproj" />
       <ProjectReference Include="..\WorkstationInfo\WorkstationInfo.csproj" />
     </ItemGroup>
@@ -17,5 +18,14 @@
       <PackageReference Include="MediatR" Version="12.4.1" />
       <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
     </ItemGroup>
+    
+    
+    <ItemGroup>
+        <None Update="..\Configuration\appsettings.Shared.json">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+
+
 
 </Project>

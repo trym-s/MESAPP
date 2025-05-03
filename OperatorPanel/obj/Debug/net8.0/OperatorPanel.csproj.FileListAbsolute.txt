@@ -28,7 +28,6 @@
 /home/vlhn/RiderProjects/MESAPP/OperatorPanel/obj/Debug/net8.0/OperatorPanel.pdb
 /home/vlhn/RiderProjects/MESAPP/OperatorPanel/obj/Debug/net8.0/ref/OperatorPanel.dll
 /home/vlhn/dev/MESAPP/MESAPP/OperatorPanel/bin/Debug/net8.0/appsettings.Development.json
-/home/vlhn/dev/MESAPP/MESAPP/OperatorPanel/bin/Debug/net8.0/appsettings.json
 /home/vlhn/dev/MESAPP/MESAPP/OperatorPanel/bin/Debug/net8.0/OperatorPanel.staticwebassets.endpoints.json
 /home/vlhn/dev/MESAPP/MESAPP/OperatorPanel/bin/Debug/net8.0/OperatorPanel.deps.json
 /home/vlhn/dev/MESAPP/MESAPP/OperatorPanel/bin/Debug/net8.0/OperatorPanel.runtimeconfig.json

@@ -1,20 +1,31 @@
 {
   "Version": 1,
-  "Hash": "UYOXSWJnVi1ge81epRceHhREhQXmupVWKhJHoZ4Zwkg=",
+  "Hash": "Wgg5dJluOsMUA+DnZld94SXavgwDZ3S3EsFBdUlLEvM=",
   "Source": "API",
   "BasePath": "_content/API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/MQTTStreaming/MQTTStreaming.csproj",
+      "Version": 2,
+      "Source": "MQTTStreaming",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained"
+    },
+    {
       "Identity": "/home/vlhn/dev/MESAPP/MESAPP/OperatorPanel/OperatorPanel.csproj",
       "Version": 2,
       "Source": "OperatorPanel",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
-      "AdditionalPublishProperties": "TargetFramework=net8.0",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU;TargetFramework=net8.0",
       "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;RuntimeIdentifier;SelfContained",
       "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
-      "AdditionalBuildProperties": "TargetFramework=net8.0",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU;TargetFramework=net8.0",
       "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;RuntimeIdentifier;SelfContained"
     }
   ],

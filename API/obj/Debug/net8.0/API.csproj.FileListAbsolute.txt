@@ -253,3 +253,7 @@
 /home/vlhn/dev/MESAPP/MESAPP/API/bin/Debug/net8.0/FluentValidation.AspNetCore.dll
 /home/vlhn/dev/MESAPP/MESAPP/API/bin/Debug/net8.0/FluentValidation.DependencyInjectionExtensions.dll
 /home/vlhn/dev/MESAPP/MESAPP/API/bin/Debug/net8.0/MediatR.Extensions.Microsoft.DependencyInjection.dll
+/home/vlhn/dev/MESAPP/MESAPP/API/bin/Debug/net8.0/MQTTStreaming.staticwebassets.endpoints.json
+/home/vlhn/dev/MESAPP/MESAPP/API/bin/Debug/net8.0/MQTTnet.dll
+/home/vlhn/dev/MESAPP/MESAPP/API/bin/Debug/net8.0/MQTTStreaming.dll
+/home/vlhn/dev/MESAPP/MESAPP/API/bin/Debug/net8.0/MQTTStreaming.pdb

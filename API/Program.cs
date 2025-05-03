@@ -4,24 +4,43 @@ using FluentValidation;
 using Infrastructure.Database;
 using Infrastructure.DependencyInjection;
 using MediatR;
-using FluentValidation.AspNetCore;
 using Microsoft.EntityFrameworkCore;
 using OperatorPanel;
 using OperatorPanel.Database;
 using WorkstationInfo;
 using WorkstationInfo.Database;
 using WorkstationInfo.Features.Queries.GetWorkstationDetails;
+using MQTTStreaming.Database;
+using MQTTStreaming.DependencyInjection;
 
-var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(GetWorkstationDetailsHandler).Assembly));// Add services to the container.
+// ✅ ÖZEL YAPILANDIRMA
+var builder = WebApplication.CreateBuilder(new WebApplicationOptions
+{
+    Args = args,
+    ContentRootPath = Directory.GetCurrentDirectory(),
+    EnvironmentName = Environments.Development // istersen değiştir: Production, Staging...
+});
+
+// ✅ MERKEZİ appsettings.Shared.json yükleniyor
+builder.Configuration
+    .SetBasePath(Path.Combine(Directory.GetCurrentDirectory(), ".."))
+    .AddJsonFile("Configuration/appsettings.Shared.json", optional: false, reloadOnChange: true)
+    .AddJsonFile("appsettings.json", optional: true)
+    .AddEnvironmentVariables();
+
+// ✅ MediatR Handler'ları
+builder.Services.AddMediatR(cfg =>
+    cfg.RegisterServicesFromAssembly(typeof(GetWorkstationDetailsHandler).Assembly));
+
+// ✅ Controller ve Endpoint
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 
-// 🔹 Yetkilendirme ve kimlik doğrulama servislerini ekle
+// ✅ Auth
 builder.Services.AddAuthentication();
-builder.Services.AddAuthorization(); // ✅ Eksik servis eklendi!
+builder.Services.AddAuthorization();
 
-// 🔹 Veri tabanı bağlantıları
+// 🔹 Database Connections
 builder.Services.AddDbContext<MesAppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
@@ -31,21 +50,27 @@ builder.Services.AddDbContext<WorkstationInfoDbContext>(options =>
 builder.Services.AddDbContext<OperatorPanelDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-//Validator
-builder.Services.AddValidatorsFromAssemblyContaining<ChangeScodeCommandValidator>();
-builder.Services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>)); // Opsiyonel ama öneriliru
+// ✅ MQTT StreamingDbContext
+builder.Services.AddDbContext<MqttStreamingDbContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// 🔹 Shared Infrastructure ve WorkstationInfoModule yükle
+// 🔹 Validators
+builder.Services.AddValidatorsFromAssemblyContaining<ChangeScodeCommandValidator>();
+builder.Services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
+
+// 🔹 Modules
 builder.Services.AddSharedInfrastructure(builder.Configuration);
 builder.Services.AddWorkstationInfoModule(builder.Configuration);
 builder.Services.AddOperatorPanelModule(builder.Configuration);
+builder.Services.AddMQTTStreamingModule(builder.Configuration); 
+
 var app = builder.Build();
 
-app.UseCustomExceptionHandler(); // app.UseRouting()'den önce olabilir
+// 🔹 Middleware
+app.UseCustomExceptionHandler();
 app.UseRouting();
-app.UseAuthentication();  // ✅ Kimlik doğrulama middleware eklendi
-app.UseAuthorization();   // ✅ Yetkilendirme middleware eklendi
+app.UseAuthentication();
+app.UseAuthorization();
 
 app.MapControllers();
-
 app.Run();

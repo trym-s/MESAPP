@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "GbTHRPjrzgwMXh3e1lkycGWu4qTpdiyDT4a03+PErmk=",
+  "Source": "MQTTStreaming",
+  "BasePath": "_content/MQTTStreaming",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
