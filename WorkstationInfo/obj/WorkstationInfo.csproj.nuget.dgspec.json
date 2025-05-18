@@ -233,7 +233,7 @@
           "dependencies": {
             "MediatR": {
               "target": "Package",
-              "version": "[12.4.1, )"
+              "version": "[11.4.0, )"
             },
             "Microsoft.AspNetCore.Mvc.Core": {
               "target": "Package",

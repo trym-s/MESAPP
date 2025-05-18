@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MQTTStreaming")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7d59d0e139f94a8d8d6edbc56b3f73285daa95da")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+30991e09c6d5c922aee10b5740e273354110568a")]
 [assembly: System.Reflection.AssemblyProductAttribute("MQTTStreaming")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MQTTStreaming")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

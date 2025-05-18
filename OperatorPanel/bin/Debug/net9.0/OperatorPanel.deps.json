@@ -10,7 +10,7 @@
         "dependencies": {
           "FluentValidation": "12.0.0-preview1",
           "Infrastructure": "1.0.0",
-          "MediatR": "12.4.1",
+          "MediatR": "12.0.0",
           "Microsoft.EntityFrameworkCore": "8.0.0",
           "Microsoft.EntityFrameworkCore.Design": "8.0.0",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.0",
@@ -37,31 +37,32 @@
           }
         }
       },
-      "MediatR/12.4.1": {
+      "MediatR/12.0.0": {
         "dependencies": {
-          "MediatR.Contracts": "2.0.1",
+          "MediatR.Contracts": "2.0.0",
+          "Microsoft.Bcl.AsyncInterfaces": "7.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0"
         },
         "runtime": {
-          "lib/net6.0/MediatR.dll": {
+          "lib/netstandard2.0/MediatR.dll": {
             "assemblyVersion": "12.0.0.0",
-            "fileVersion": "12.4.1.0"
+            "fileVersion": "12.0.0.0"
           }
         }
       },
-      "MediatR.Contracts/2.0.1": {
+      "MediatR.Contracts/2.0.0": {
         "runtime": {
           "lib/netstandard2.0/MediatR.Contracts.dll": {
-            "assemblyVersion": "2.0.1.0",
-            "fileVersion": "2.0.1.0"
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
           }
         }
       },
-      "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
+      "Microsoft.Bcl.AsyncInterfaces/7.0.0": {
         "runtime": {
           "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {
-            "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.0.21.52210"
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.22.51805"
           }
         }
       },
@@ -232,7 +233,7 @@
       "Microsoft.CodeAnalysis.Workspaces.Common/4.5.0": {
         "dependencies": {
           "Humanizer.Core": "2.14.1",
-          "Microsoft.Bcl.AsyncInterfaces": "6.0.0",
+          "Microsoft.Bcl.AsyncInterfaces": "7.0.0",
           "Microsoft.CodeAnalysis.Common": "4.5.0",
           "System.Composition": "6.0.0",
           "System.IO.Pipelines": "6.0.3",
@@ -616,26 +617,26 @@
       "path": "humanizer.core/2.14.1",
       "hashPath": "humanizer.core.2.14.1.nupkg.sha512"
     },
-    "MediatR/12.4.1": {
+    "MediatR/12.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-0tLxCgEC5+r1OCuumR3sWyiVa+BMv3AgiU4+pz8xqTc+2q1WbUEXFOr7Orm96oZ9r9FsldgUtWvB2o7b9jDOaw==",
-      "path": "mediatr/12.4.1",
-      "hashPath": "mediatr.12.4.1.nupkg.sha512"
+      "sha512": "sha512-1XodBmbn3I1y7T0iSCSl9sQqHOx/BF63GqWb7mtMQja9ESUk7QrcmzzJFOGie9ruSC7A/oaW/8TwaJLuA9RQRw==",
+      "path": "mediatr/12.0.0",
+      "hashPath": "mediatr.12.0.0.nupkg.sha512"
     },
-    "MediatR.Contracts/2.0.1": {
+    "MediatR.Contracts/2.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-FYv95bNT4UwcNA+G/J1oX5OpRiSUxteXaUt2BJbRSdRNiIUNbggJF69wy6mnk2wYToaanpdXZdCwVylt96MpwQ==",
-      "path": "mediatr.contracts/2.0.1",
-      "hashPath": "mediatr.contracts.2.0.1.nupkg.sha512"
+      "sha512": "sha512-DKkwHP3xb2BVeBQQedNvg7eMKvQU33H3SozHsc+drjDSCcnVb/ov4tSwdRAyLv74Nb0IUl2evVR9OQuqurGqpA==",
+      "path": "mediatr.contracts/2.0.0",
+      "hashPath": "mediatr.contracts.2.0.0.nupkg.sha512"
     },
-    "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
+    "Microsoft.Bcl.AsyncInterfaces/7.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-UcSjPsst+DfAdJGVDsu346FX0ci0ah+lw3WRtn18NUwEqRt70HaOQ7lI72vy3+1LxtqI3T5GWwV39rQSrCzAeg==",
-      "path": "microsoft.bcl.asyncinterfaces/6.0.0",
-      "hashPath": "microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512"
+      "sha512": "sha512-3aeMZ1N0lJoSyzqiP03hqemtb1BijhsJADdobn/4nsMJ8V1H+CrpuduUe4hlRdx+ikBQju1VGjMD1GJ3Sk05Eg==",
+      "path": "microsoft.bcl.asyncinterfaces/7.0.0",
+      "hashPath": "microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512"
     },
     "Microsoft.CodeAnalysis.Analyzers/3.3.3": {
       "type": "package",

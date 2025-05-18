@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "dMecXJm7N8Q=",
+  "dgSpecHash": "oKA5WFRElBw=",
   "success": true,
   "projectFilePath": "/home/vlhn/dev/MESAPP/MESAPP/API/API.csproj",
   "expectedPackageFiles": [
@@ -8,8 +8,8 @@
     "/home/vlhn/.nuget/packages/fluentvalidation.aspnetcore/11.3.0/fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
     "/home/vlhn/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.5.1/fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "/home/vlhn/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
-    "/home/vlhn/.nuget/packages/mediatr/12.4.1/mediatr.12.4.1.nupkg.sha512",
-    "/home/vlhn/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
+    "/home/vlhn/.nuget/packages/mediatr/12.0.0/mediatr.12.0.0.nupkg.sha512",
+    "/home/vlhn/.nuget/packages/mediatr.contracts/2.0.0/mediatr.contracts.2.0.0.nupkg.sha512",
     "/home/vlhn/.nuget/packages/mediatr.extensions.microsoft.dependencyinjection/11.1.0/mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
     "/home/vlhn/.nuget/packages/microsoft.aspnetcore.authentication.abstractions/2.3.0/microsoft.aspnetcore.authentication.abstractions.2.3.0.nupkg.sha512",
     "/home/vlhn/.nuget/packages/microsoft.aspnetcore.authentication.core/2.3.0/microsoft.aspnetcore.authentication.core.2.3.0.nupkg.sha512",
@@ -27,7 +27,7 @@
     "/home/vlhn/.nuget/packages/microsoft.aspnetcore.routing/2.3.0/microsoft.aspnetcore.routing.2.3.0.nupkg.sha512",
     "/home/vlhn/.nuget/packages/microsoft.aspnetcore.routing.abstractions/2.3.0/microsoft.aspnetcore.routing.abstractions.2.3.0.nupkg.sha512",
     "/home/vlhn/.nuget/packages/microsoft.aspnetcore.webutilities/2.3.0/microsoft.aspnetcore.webutilities.2.3.0.nupkg.sha512",
-    "/home/vlhn/.nuget/packages/microsoft.bcl.asyncinterfaces/6.0.0/microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
+    "/home/vlhn/.nuget/packages/microsoft.bcl.asyncinterfaces/7.0.0/microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
     "/home/vlhn/.nuget/packages/microsoft.codeanalysis.analyzers/3.3.3/microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",
     "/home/vlhn/.nuget/packages/microsoft.codeanalysis.common/4.5.0/microsoft.codeanalysis.common.4.5.0.nupkg.sha512",
     "/home/vlhn/.nuget/packages/microsoft.codeanalysis.csharp/4.5.0/microsoft.codeanalysis.csharp.4.5.0.nupkg.sha512",
@@ -88,10 +88,20 @@
   ],
   "logs": [
     {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "API depends on MediatR (>= 11.4.0) but MediatR 11.4.0 was not found. MediatR 12.0.0 was resolved instead.",
+      "libraryId": "MediatR",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
       "code": "NU1608",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package version outside of dependency constraint: MediatR.Extensions.Microsoft.DependencyInjection 11.1.0 requires MediatR (>= 11.0.0 && < 12.0.0) but version MediatR 12.4.1 was resolved.",
+      "message": "Detected package version outside of dependency constraint: MediatR.Extensions.Microsoft.DependencyInjection 11.1.0 requires MediatR (>= 11.0.0 && < 12.0.0) but version MediatR 12.0.0 was resolved.",
       "libraryId": "MediatR",
       "targetGraphs": [
         "net8.0"
