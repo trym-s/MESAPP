@@ -821,7 +821,8 @@
           "Microsoft.Extensions.Configuration.Binder": "8.0.2",
           "Microsoft.Extensions.Configuration.Json": "8.0.1",
           "Microsoft.Extensions.DependencyInjection": "8.0.1",
-          "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.2"
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.2",
+          "Shared": "1.0.0"
         },
         "runtime": {
           "Infrastructure.dll": {
@@ -833,7 +834,8 @@
       "MQTTStreaming/1.0.0": {
         "dependencies": {
           "MQTTnet": "4.0.0.167",
-          "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.2"
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.2",
+          "Shared": "1.0.0"
         },
         "runtime": {
           "MQTTStreaming.dll": {
@@ -855,6 +857,14 @@
         },
         "runtime": {
           "OperatorPanel.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Shared/1.0.0": {
+        "runtime": {
+          "Shared.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -1446,6 +1456,11 @@
       "sha512": ""
     },
     "OperatorPanel/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Shared/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1532,7 +1532,8 @@
           "Microsoft.Extensions.Configuration.Binder": "8.0.0",
           "Microsoft.Extensions.Configuration.Json": "8.0.0",
           "Microsoft.Extensions.DependencyInjection": "8.0.0",
-          "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.0"
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.0",
+          "Shared": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Infrastructure.dll": {}
@@ -1546,7 +1547,8 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "MQTTnet": "4.0.0.167",
-          "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.0"
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.0",
+          "Shared": "1.0.0"
         },
         "compile": {
           "bin/placeholder/MQTTStreaming.dll": {}
@@ -1576,6 +1578,19 @@
         },
         "runtime": {
           "bin/placeholder/OperatorPanel.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.dll": {}
         },
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
@@ -3747,6 +3762,11 @@
       "path": "../OperatorPanel/OperatorPanel.csproj",
       "msbuildProject": "../OperatorPanel/OperatorPanel.csproj"
     },
+    "Shared/1.0.0": {
+      "type": "project",
+      "path": "../Shared/Shared.csproj",
+      "msbuildProject": "../Shared/Shared.csproj"
+    },
     "WorkstationInfo/1.0.0": {
       "type": "project",
       "path": "../WorkstationInfo/WorkstationInfo.csproj",
@@ -3847,6 +3867,14 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.15, 8.0.15]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.linux-x64",
+            "version": "[8.0.15, 8.0.15]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
             "version": "[8.0.15, 8.0.15]"
           }
         ],
