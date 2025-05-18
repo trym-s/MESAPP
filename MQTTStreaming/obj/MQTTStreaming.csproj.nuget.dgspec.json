@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/vlhn/dev/MESAPP/MESAPP/MQTTStreaming/MQTTStreaming.csproj": {}
+    "/home/vmvm/MESAPP/MQTTStreaming/MQTTStreaming.csproj": {}
   },
   "projects": {
-    "/home/vlhn/dev/MESAPP/MESAPP/Infrastructure/Infrastructure.csproj": {
+    "/home/vmvm/MESAPP/Infrastructure/Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/vlhn/dev/MESAPP/MESAPP/Infrastructure/Infrastructure.csproj",
+        "projectUniqueName": "/home/vmvm/MESAPP/Infrastructure/Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "/home/vlhn/dev/MESAPP/MESAPP/Infrastructure/Infrastructure.csproj",
-        "packagesPath": "/home/vlhn/.nuget/packages/",
-        "outputPath": "/home/vlhn/dev/MESAPP/MESAPP/Infrastructure/obj/",
+        "projectPath": "/home/vmvm/MESAPP/Infrastructure/Infrastructure.csproj",
+        "packagesPath": "/home/vmvm/.nuget/packages/",
+        "outputPath": "/home/vmvm/MESAPP/Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/vlhn/.nuget/NuGet/NuGet.Config"
+          "/home/vmvm/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -26,8 +26,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/vlhn/dev/MESAPP/MESAPP/Shared/Shared.csproj": {
-                "projectPath": "/home/vlhn/dev/MESAPP/MESAPP/Shared/Shared.csproj"
+              "/home/vmvm/MESAPP/Shared/Shared.csproj": {
+                "projectPath": "/home/vmvm/MESAPP/Shared/Shared.csproj"
               }
             }
           }
@@ -36,13 +36,7 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -96,36 +90,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.15, 8.0.15]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.15, 8.0.15]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.116/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/vlhn/dev/MESAPP/MESAPP/MQTTStreaming/MQTTStreaming.csproj": {
+    "/home/vmvm/MESAPP/MQTTStreaming/MQTTStreaming.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/vlhn/dev/MESAPP/MESAPP/MQTTStreaming/MQTTStreaming.csproj",
+        "projectUniqueName": "/home/vmvm/MESAPP/MQTTStreaming/MQTTStreaming.csproj",
         "projectName": "MQTTStreaming",
-        "projectPath": "/home/vlhn/dev/MESAPP/MESAPP/MQTTStreaming/MQTTStreaming.csproj",
-        "packagesPath": "/home/vlhn/.nuget/packages/",
-        "outputPath": "/home/vlhn/dev/MESAPP/MESAPP/MQTTStreaming/obj/",
+        "projectPath": "/home/vmvm/MESAPP/MQTTStreaming/MQTTStreaming.csproj",
+        "packagesPath": "/home/vmvm/.nuget/packages/",
+        "outputPath": "/home/vmvm/MESAPP/MQTTStreaming/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/vlhn/.nuget/NuGet/NuGet.Config"
+          "/home/vmvm/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -137,11 +121,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/vlhn/dev/MESAPP/MESAPP/Infrastructure/Infrastructure.csproj": {
-                "projectPath": "/home/vlhn/dev/MESAPP/MESAPP/Infrastructure/Infrastructure.csproj"
+              "/home/vmvm/MESAPP/Infrastructure/Infrastructure.csproj": {
+                "projectPath": "/home/vmvm/MESAPP/Infrastructure/Infrastructure.csproj"
               },
-              "/home/vlhn/dev/MESAPP/MESAPP/Shared/Shared.csproj": {
-                "projectPath": "/home/vlhn/dev/MESAPP/MESAPP/Shared/Shared.csproj"
+              "/home/vmvm/MESAPP/Shared/Shared.csproj": {
+                "projectPath": "/home/vmvm/MESAPP/Shared/Shared.csproj"
               }
             }
           }
@@ -150,13 +134,7 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -194,16 +172,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.15, 8.0.15]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.15, 8.0.15]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -212,21 +180,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.116/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/vlhn/dev/MESAPP/MESAPP/Shared/Shared.csproj": {
+    "/home/vmvm/MESAPP/Shared/Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/vlhn/dev/MESAPP/MESAPP/Shared/Shared.csproj",
+        "projectUniqueName": "/home/vmvm/MESAPP/Shared/Shared.csproj",
         "projectName": "Shared",
-        "projectPath": "/home/vlhn/dev/MESAPP/MESAPP/Shared/Shared.csproj",
-        "packagesPath": "/home/vlhn/.nuget/packages/",
-        "outputPath": "/home/vlhn/dev/MESAPP/MESAPP/Shared/obj/",
+        "projectPath": "/home/vmvm/MESAPP/Shared/Shared.csproj",
+        "packagesPath": "/home/vmvm/.nuget/packages/",
+        "outputPath": "/home/vmvm/MESAPP/Shared/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/vlhn/.nuget/NuGet/NuGet.Config"
+          "/home/vmvm/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -244,13 +212,7 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -272,20 +234,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.15, 8.0.15]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.linux-x64",
-              "version": "[8.0.15, 8.0.15]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.15, 8.0.15]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -294,7 +242,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.116/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
