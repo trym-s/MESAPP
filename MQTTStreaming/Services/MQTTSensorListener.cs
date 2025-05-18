@@ -1,13 +1,15 @@
-using MQTTnet;
-using MQTTnet.Protocol;
-using Microsoft.Extensions.Options;
 using System.Text;
 using System.Text.Json;
 using MediatR;
+using Microsoft.Extensions.Options;
+using MQTTnet;
 using MQTTnet.Client;
+using MQTTnet.Protocol;
 using MQTTStreaming.Features.SensorData.Commands.SaveSensorData;
 using MQTTStreaming.Features.SensorData.DTOs;
 using MQTTStreaming.Settings;
+
+namespace MQTTStreaming.Services;
 
 public class MqttSensorListener : BackgroundService
 {
@@ -39,9 +41,17 @@ public class MqttSensorListener : BackgroundService
                     PropertyNameCaseInsensitive = true
                 });
 
-                using var scope = _scopeFactory.CreateScope();
-                var mediator = scope.ServiceProvider.GetRequiredService<IMediator>();
-                await mediator.Send(new SaveSensorDataCommand(dto));
+                if (dto is not null)
+                {
+                    using var scope = _scopeFactory.CreateScope();
+                    var mediator = scope.ServiceProvider.GetRequiredService<IMediator>();
+                    await mediator.Send(new SaveSensorDataCommand(dto));
+                }
+                else
+                {
+                    _logger.LogWarning("MQTT mesajı deserialize edilemedi veya boş içerik geldi.");
+                }
+
             }
             catch (Exception ex)
             {

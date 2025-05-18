@@ -35,6 +35,9 @@
               "/home/vlhn/dev/MESAPP/MESAPP/OperatorPanel/OperatorPanel.csproj": {
                 "projectPath": "/home/vlhn/dev/MESAPP/MESAPP/OperatorPanel/OperatorPanel.csproj"
               },
+              "/home/vlhn/dev/MESAPP/MESAPP/Shared/Shared.csproj": {
+                "projectPath": "/home/vlhn/dev/MESAPP/MESAPP/Shared/Shared.csproj"
+              },
               "/home/vlhn/dev/MESAPP/MESAPP/WorkstationInfo/WorkstationInfo.csproj": {
                 "projectPath": "/home/vlhn/dev/MESAPP/MESAPP/WorkstationInfo/WorkstationInfo.csproj"
               }
@@ -63,11 +66,7 @@
             },
             "MediatR": {
               "target": "Package",
-              "version": "[11.4.0, )"
-            },
-            "MediatR.Extensions.Microsoft.DependencyInjection": {
-              "target": "Package",
-              "version": "[11.1.0, )"
+              "version": "[12.0.0, )"
             }
           },
           "imports": [
@@ -151,17 +150,21 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[8.0.2, )"
             },
             "Microsoft.EntityFrameworkCore.Abstractions": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[8.0.2, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[8.0.2, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
@@ -169,19 +172,19 @@
             },
             "Microsoft.Extensions.Configuration.Binder": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[8.0.2, )"
             },
             "Microsoft.Extensions.Configuration.Json": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[8.0.1, )"
             },
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[8.0.1, )"
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[8.0.2, )"
             }
           },
           "imports": [
@@ -236,6 +239,9 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "/home/vlhn/dev/MESAPP/MESAPP/Infrastructure/Infrastructure.csproj": {
+                "projectPath": "/home/vlhn/dev/MESAPP/MESAPP/Infrastructure/Infrastructure.csproj"
+              },
               "/home/vlhn/dev/MESAPP/MESAPP/Shared/Shared.csproj": {
                 "projectPath": "/home/vlhn/dev/MESAPP/MESAPP/Shared/Shared.csproj"
               }
@@ -262,9 +268,21 @@
               "target": "Package",
               "version": "[4.0.0.167, )"
             },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[8.0.2, )"
             }
           },
           "imports": [
@@ -309,13 +327,11 @@
         "packagesPath": "/home/vlhn/.nuget/packages/",
         "outputPath": "/home/vlhn/dev/MESAPP/MESAPP/OperatorPanel/obj/",
         "projectStyle": "PackageReference",
-        "crossTargeting": true,
         "configFilePaths": [
           "/home/vlhn/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net8.0",
-          "net9.0"
+          "net8.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
@@ -326,14 +342,9 @@
             "projectReferences": {
               "/home/vlhn/dev/MESAPP/MESAPP/Infrastructure/Infrastructure.csproj": {
                 "projectPath": "/home/vlhn/dev/MESAPP/MESAPP/Infrastructure/Infrastructure.csproj"
-              }
-            }
-          },
-          "net9.0": {
-            "targetAlias": "net9.0",
-            "projectReferences": {
-              "/home/vlhn/dev/MESAPP/MESAPP/Infrastructure/Infrastructure.csproj": {
-                "projectPath": "/home/vlhn/dev/MESAPP/MESAPP/Infrastructure/Infrastructure.csproj"
+              },
+              "/home/vlhn/dev/MESAPP/MESAPP/Shared/Shared.csproj": {
+                "projectPath": "/home/vlhn/dev/MESAPP/MESAPP/Shared/Shared.csproj"
               }
             }
           }
@@ -354,33 +365,25 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "FluentValidation": {
+            "FluentValidation.AspNetCore": {
               "target": "Package",
-              "version": "[12.0.0-preview1, )"
+              "version": "[11.3.0, )"
             },
             "MediatR": {
               "target": "Package",
-              "version": "[11.4.0, )"
+              "version": "[12.0.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.Design": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[8.0.2, )"
             },
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[8.0.1, )"
             },
-            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[8.0.2, )"
             }
           },
           "imports": [
@@ -404,59 +407,6 @@
               "version": "[8.0.15, 8.0.15]"
             }
           ],
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.203/PortableRuntimeIdentifierGraph.json"
-        },
-        "net9.0": {
-          "targetAlias": "net9.0",
-          "dependencies": {
-            "FluentValidation": {
-              "target": "Package",
-              "version": "[12.0.0-preview1, )"
-            },
-            "MediatR": {
-              "target": "Package",
-              "version": "[11.4.0, )"
-            },
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.Design": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "Microsoft.Extensions.DependencyInjection": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "Microsoft.Extensions.DependencyInjection.Abstractions": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -508,6 +458,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -569,6 +525,9 @@
             "projectReferences": {
               "/home/vlhn/dev/MESAPP/MESAPP/Infrastructure/Infrastructure.csproj": {
                 "projectPath": "/home/vlhn/dev/MESAPP/MESAPP/Infrastructure/Infrastructure.csproj"
+              },
+              "/home/vlhn/dev/MESAPP/MESAPP/Shared/Shared.csproj": {
+                "projectPath": "/home/vlhn/dev/MESAPP/MESAPP/Shared/Shared.csproj"
               }
             }
           }
@@ -591,11 +550,7 @@
           "dependencies": {
             "MediatR": {
               "target": "Package",
-              "version": "[11.4.0, )"
-            },
-            "Microsoft.AspNetCore.Mvc.Core": {
-              "target": "Package",
-              "version": "[2.3.0, )"
+              "version": "[12.0.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",

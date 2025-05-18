@@ -12,6 +12,6 @@ public class Workorder
     public DateTime FinishDate { get; set; }
     public int CurrentScodeValue { get; set; }
 
-    public Workstation Workstation { get; set; }
-    public ICollection<WorkorderPerformanceLog> PerformanceRecords { get; set; }
+    public required Workstation Workstation { get; set; }
+    public  required ICollection<WorkorderPerformanceLog> PerformanceRecords { get; set; }
 }

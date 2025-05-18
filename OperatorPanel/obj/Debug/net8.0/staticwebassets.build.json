@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XPmtdlFD9SXRNp6vL+B3Y6Pb3uICAed1Vs4Jc7zr0L4=",
+  "Hash": "FSx4BZ6CtJEwsIjfHfxXhVweamtVJr0E7ZPbFpZAOoU=",
   "Source": "OperatorPanel",
   "BasePath": "_content/OperatorPanel",
   "Mode": "Default",
@@ -11,10 +11,10 @@
       "Version": 2,
       "Source": "Shared",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
-      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishProperties": "",
       "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
       "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
-      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildProperties": "",
       "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
     }
   ],

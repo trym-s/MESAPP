@@ -142,7 +142,6 @@
 /home/vlhn/dev/MESAPP/MESAPP/API/bin/Debug/net8.0/Humanizer.dll
 /home/vlhn/dev/MESAPP/MESAPP/API/bin/Debug/net8.0/MediatR.dll
 /home/vlhn/dev/MESAPP/MESAPP/API/bin/Debug/net8.0/MediatR.Contracts.dll
-/home/vlhn/dev/MESAPP/MESAPP/API/bin/Debug/net8.0/MediatR.Extensions.Microsoft.DependencyInjection.dll
 /home/vlhn/dev/MESAPP/MESAPP/API/bin/Debug/net8.0/Microsoft.Bcl.AsyncInterfaces.dll
 /home/vlhn/dev/MESAPP/MESAPP/API/bin/Debug/net8.0/Microsoft.CodeAnalysis.dll
 /home/vlhn/dev/MESAPP/MESAPP/API/bin/Debug/net8.0/Microsoft.CodeAnalysis.CSharp.dll
@@ -158,11 +157,6 @@
 /home/vlhn/dev/MESAPP/MESAPP/API/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.dll
 /home/vlhn/dev/MESAPP/MESAPP/API/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
 /home/vlhn/dev/MESAPP/MESAPP/API/bin/Debug/net8.0/Microsoft.Extensions.DependencyModel.dll
-/home/vlhn/dev/MESAPP/MESAPP/API/bin/Debug/net8.0/Microsoft.Extensions.Diagnostics.Abstractions.dll
-/home/vlhn/dev/MESAPP/MESAPP/API/bin/Debug/net8.0/Microsoft.Extensions.Hosting.Abstractions.dll
-/home/vlhn/dev/MESAPP/MESAPP/API/bin/Debug/net8.0/Microsoft.Extensions.Logging.Abstractions.dll
-/home/vlhn/dev/MESAPP/MESAPP/API/bin/Debug/net8.0/Microsoft.Extensions.ObjectPool.dll
-/home/vlhn/dev/MESAPP/MESAPP/API/bin/Debug/net8.0/Microsoft.Extensions.Options.dll
 /home/vlhn/dev/MESAPP/MESAPP/API/bin/Debug/net8.0/Mono.TextTemplating.dll
 /home/vlhn/dev/MESAPP/MESAPP/API/bin/Debug/net8.0/MQTTnet.dll
 /home/vlhn/dev/MESAPP/MESAPP/API/bin/Debug/net8.0/Npgsql.dll
@@ -232,9 +226,9 @@
 /home/vlhn/dev/MESAPP/MESAPP/API/bin/Debug/net8.0/WorkstationInfo.dll
 /home/vlhn/dev/MESAPP/MESAPP/API/bin/Debug/net8.0/Infrastructure.pdb
 /home/vlhn/dev/MESAPP/MESAPP/API/bin/Debug/net8.0/MQTTStreaming.pdb
+/home/vlhn/dev/MESAPP/MESAPP/API/bin/Debug/net8.0/OperatorPanel.pdb
 /home/vlhn/dev/MESAPP/MESAPP/API/bin/Debug/net8.0/WorkstationInfo.pdb
 /home/vlhn/dev/MESAPP/MESAPP/API/bin/Debug/net8.0/Shared.pdb
-/home/vlhn/dev/MESAPP/MESAPP/API/bin/Debug/net8.0/OperatorPanel.pdb
 /home/vlhn/dev/MESAPP/MESAPP/API/obj/Debug/net8.0/API.csproj.AssemblyReference.cache
 /home/vlhn/dev/MESAPP/MESAPP/API/obj/Debug/net8.0/API.GeneratedMSBuildEditorConfig.editorconfig
 /home/vlhn/dev/MESAPP/MESAPP/API/obj/Debug/net8.0/API.AssemblyInfoInputs.cache

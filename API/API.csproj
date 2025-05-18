@@ -7,25 +7,23 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
-      <ProjectReference Include="..\MQTTStreaming\MQTTStreaming.csproj" />
-      <ProjectReference Include="..\OperatorPanel\OperatorPanel.csproj" />
-      <ProjectReference Include="..\WorkstationInfo\WorkstationInfo.csproj" />
+        <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
+        <ProjectReference Include="..\MQTTStreaming\MQTTStreaming.csproj" />
+        <ProjectReference Include="..\OperatorPanel\OperatorPanel.csproj" />
+        <ProjectReference Include="..\WorkstationInfo\WorkstationInfo.csproj" />
+        <ProjectReference Include="..\Shared\Shared.csproj" />
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
-      <PackageReference Include="MediatR" Version="11.4.0" />
-      <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+        <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+        <PackageReference Include="MediatR" Version="12.0.0" />
     </ItemGroup>
-    
-    
+
+
     <ItemGroup>
         <None Update="..\Configuration\appsettings.Shared.json">
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </None>
     </ItemGroup>
-
-
 
 </Project>

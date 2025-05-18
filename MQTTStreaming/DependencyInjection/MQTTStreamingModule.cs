@@ -1,3 +1,5 @@
+using MQTTStreaming.Services;
+
 namespace MQTTStreaming.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;

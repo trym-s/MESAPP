@@ -4,7 +4,7 @@ public class Sensor
 {
     public int SensorId { get; set; }
     public int WorkstationId { get; set; }
-    public string SensorName { get; set; }
+    public required string SensorName { get; set; }
 
-    public Workstation Workstation { get; set; }
+    public required Workstation Workstation { get; set; }
 }

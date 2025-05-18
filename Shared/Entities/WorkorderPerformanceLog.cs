@@ -12,8 +12,8 @@ public class WorkorderPerformanceLog
     public decimal Availability { get; set; }
     public decimal CycleTime { get; set; }
 
-    public Workstation Workstation { get; set; }
-    public Workorder Workorder { get; set; }
+    public required Workstation Workstation { get; set; }
+    public required Workorder Workorder { get; set; }
     
     public TimeSpan? total_startup_downtime { get; set; }
     public TimeSpan? total_planned_downtime { get; set; }

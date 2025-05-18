@@ -1,12 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "ESJ3Q92YkUU=",
+  "dgSpecHash": "fGvF+1LrYok=",
   "success": true,
   "projectFilePath": "/home/vlhn/dev/MESAPP/MESAPP/SharedKernel/SharedKernel.csproj",
   "expectedPackageFiles": [
-    "/home/vlhn/.nuget/packages/microsoft.netcore.app.ref/8.0.15/microsoft.netcore.app.ref.8.0.15.nupkg.sha512",
+    "/home/vlhn/.nuget/packages/mediatr/12.0.0/mediatr.12.0.0.nupkg.sha512",
+    "/home/vlhn/.nuget/packages/mediatr.contracts/2.0.0/mediatr.contracts.2.0.0.nupkg.sha512",
+    "/home/vlhn/.nuget/packages/microsoft.bcl.asyncinterfaces/7.0.0/microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
+    "/home/vlhn/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0/microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
     "/home/vlhn/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.15/microsoft.aspnetcore.app.ref.8.0.15.nupkg.sha512",
-    "/home/vlhn/.nuget/packages/microsoft.netcore.app.host.linux-x64/8.0.15/microsoft.netcore.app.host.linux-x64.8.0.15.nupkg.sha512"
+    "/home/vlhn/.nuget/packages/microsoft.netcore.app.host.linux-x64/8.0.15/microsoft.netcore.app.host.linux-x64.8.0.15.nupkg.sha512",
+    "/home/vlhn/.nuget/packages/microsoft.netcore.app.ref/8.0.15/microsoft.netcore.app.ref.8.0.15.nupkg.sha512"
   ],
   "logs": []
 }

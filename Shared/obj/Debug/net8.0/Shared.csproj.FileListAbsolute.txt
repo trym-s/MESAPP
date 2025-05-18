@@ -6,6 +6,10 @@
 /home/vlhn/dev/MESAPP/MESAPP/Shared/bin/Debug/net8.0/Shared.runtimeconfig.json
 /home/vlhn/dev/MESAPP/MESAPP/Shared/bin/Debug/net8.0/Shared.dll
 /home/vlhn/dev/MESAPP/MESAPP/Shared/bin/Debug/net8.0/Shared.pdb
+/home/vlhn/dev/MESAPP/MESAPP/Shared/bin/Debug/net8.0/MediatR.dll
+/home/vlhn/dev/MESAPP/MESAPP/Shared/bin/Debug/net8.0/MediatR.Contracts.dll
+/home/vlhn/dev/MESAPP/MESAPP/Shared/bin/Debug/net8.0/Microsoft.Bcl.AsyncInterfaces.dll
+/home/vlhn/dev/MESAPP/MESAPP/Shared/obj/Debug/net8.0/Shared.csproj.AssemblyReference.cache
 /home/vlhn/dev/MESAPP/MESAPP/Shared/obj/Debug/net8.0/Shared.GeneratedMSBuildEditorConfig.editorconfig
 /home/vlhn/dev/MESAPP/MESAPP/Shared/obj/Debug/net8.0/Shared.AssemblyInfoInputs.cache
 /home/vlhn/dev/MESAPP/MESAPP/Shared/obj/Debug/net8.0/Shared.AssemblyInfo.cs
@@ -22,6 +26,7 @@
 /home/vlhn/dev/MESAPP/MESAPP/Shared/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.Shared.props
 /home/vlhn/dev/MESAPP/MESAPP/Shared/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.Shared.props
 /home/vlhn/dev/MESAPP/MESAPP/Shared/obj/Debug/net8.0/staticwebassets.pack.json
+/home/vlhn/dev/MESAPP/MESAPP/Shared/obj/Debug/net8.0/Shared.csproj.Up2Date
 /home/vlhn/dev/MESAPP/MESAPP/Shared/obj/Debug/net8.0/Shared.dll
 /home/vlhn/dev/MESAPP/MESAPP/Shared/obj/Debug/net8.0/refint/Shared.dll
 /home/vlhn/dev/MESAPP/MESAPP/Shared/obj/Debug/net8.0/Shared.pdb
