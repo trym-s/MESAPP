@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "diV/gbxTIdQ=",
+  "dgSpecHash": "RSbEaby3w6A=",
   "success": true,
   "projectFilePath": "/home/vlhn/dev/MESAPP/MESAPP/MQTTStreaming/MQTTStreaming.csproj",
   "expectedPackageFiles": [
@@ -20,6 +20,7 @@
     "/home/vlhn/.nuget/packages/mqttnet/4.0.0.167/mqttnet.4.0.0.167.nupkg.sha512",
     "/home/vlhn/.nuget/packages/npgsql/8.0.0/npgsql.8.0.0.nupkg.sha512",
     "/home/vlhn/.nuget/packages/npgsql.entityframeworkcore.postgresql/8.0.0/npgsql.entityframeworkcore.postgresql.8.0.0.nupkg.sha512",
+    "/home/vlhn/.nuget/packages/microsoft.netcore.app.ref/8.0.15/microsoft.netcore.app.ref.8.0.15.nupkg.sha512",
     "/home/vlhn/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.15/microsoft.aspnetcore.app.ref.8.0.15.nupkg.sha512"
   ],
   "logs": []

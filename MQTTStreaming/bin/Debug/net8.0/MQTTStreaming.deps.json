@@ -10,6 +10,7 @@
         "dependencies": {
           "MQTTnet": "4.0.0.167",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.0",
+          "Shared": "1.0.0",
           "MediatR.Contracts": "2.0.1.0",
           "MediatR": "12.0.0.0"
         },
@@ -126,6 +127,14 @@
           "lib/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {
             "assemblyVersion": "8.0.0.0",
             "fileVersion": "8.0.0.0"
+          }
+        }
+      },
+      "Shared/1.0.0": {
+        "runtime": {
+          "Shared.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
           }
         }
       },
@@ -264,6 +273,11 @@
       "sha512": "sha512-GDXiMS9peEdjSCU/rfgyHruio7q6tYuywGaktqEi6UPQ6ILechp3fVVX+dHXkIXt4nklCBzYVWkzFrSL9ubKUA==",
       "path": "npgsql.entityframeworkcore.postgresql/8.0.0",
       "hashPath": "npgsql.entityframeworkcore.postgresql.8.0.0.nupkg.sha512"
+    },
+    "Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "MediatR.Contracts/2.0.1.0": {
       "type": "reference",

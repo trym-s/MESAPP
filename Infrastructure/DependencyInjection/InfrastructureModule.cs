@@ -1,9 +1,9 @@
+using Infrastructure.Database;
+using Infrastructure.Options;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
-using Infrastructure.Options;
-using Infrastructure.Database;
-using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.DependencyInjection;
 

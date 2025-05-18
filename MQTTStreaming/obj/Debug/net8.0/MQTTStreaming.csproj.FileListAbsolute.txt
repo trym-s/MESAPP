@@ -1,9 +1,3 @@
-/home/vlhn/dev/MESAPP/MESAPP/MQTTStreaming/obj/Debug/net8.0/MQTTStreaming.csproj.AssemblyReference.cache
-/home/vlhn/dev/MESAPP/MESAPP/MQTTStreaming/obj/Debug/net8.0/MQTTStreaming.GeneratedMSBuildEditorConfig.editorconfig
-/home/vlhn/dev/MESAPP/MESAPP/MQTTStreaming/obj/Debug/net8.0/MQTTStreaming.AssemblyInfoInputs.cache
-/home/vlhn/dev/MESAPP/MESAPP/MQTTStreaming/obj/Debug/net8.0/MQTTStreaming.AssemblyInfo.cs
-/home/vlhn/dev/MESAPP/MESAPP/MQTTStreaming/obj/Debug/net8.0/MQTTStreaming.csproj.CoreCompileInputs.cache
-/home/vlhn/dev/MESAPP/MESAPP/MQTTStreaming/obj/Debug/net8.0/MQTTStreaming.sourcelink.json
 /home/vlhn/dev/MESAPP/MESAPP/MQTTStreaming/bin/Debug/net8.0/appsettings.Development.json
 /home/vlhn/dev/MESAPP/MESAPP/MQTTStreaming/bin/Debug/net8.0/MQTTStreaming.staticwebassets.endpoints.json
 /home/vlhn/dev/MESAPP/MESAPP/MQTTStreaming/bin/Debug/net8.0/MQTTStreaming.deps.json
@@ -13,6 +7,12 @@
 /home/vlhn/dev/MESAPP/MESAPP/MQTTStreaming/bin/Debug/net8.0/MediatR.dll
 /home/vlhn/dev/MESAPP/MESAPP/MQTTStreaming/bin/Debug/net8.0/MediatR.xml
 /home/vlhn/dev/MESAPP/MESAPP/MQTTStreaming/bin/Debug/net8.0/MediatR.Contracts.xml
+/home/vlhn/dev/MESAPP/MESAPP/MQTTStreaming/obj/Debug/net8.0/MQTTStreaming.csproj.AssemblyReference.cache
+/home/vlhn/dev/MESAPP/MESAPP/MQTTStreaming/obj/Debug/net8.0/MQTTStreaming.GeneratedMSBuildEditorConfig.editorconfig
+/home/vlhn/dev/MESAPP/MESAPP/MQTTStreaming/obj/Debug/net8.0/MQTTStreaming.AssemblyInfoInputs.cache
+/home/vlhn/dev/MESAPP/MESAPP/MQTTStreaming/obj/Debug/net8.0/MQTTStreaming.AssemblyInfo.cs
+/home/vlhn/dev/MESAPP/MESAPP/MQTTStreaming/obj/Debug/net8.0/MQTTStreaming.csproj.CoreCompileInputs.cache
+/home/vlhn/dev/MESAPP/MESAPP/MQTTStreaming/obj/Debug/net8.0/MQTTStreaming.sourcelink.json
 /home/vlhn/dev/MESAPP/MESAPP/MQTTStreaming/obj/Debug/net8.0/scopedcss/bundle/MQTTStreaming.styles.css
 /home/vlhn/dev/MESAPP/MESAPP/MQTTStreaming/obj/Debug/net8.0/staticwebassets.build.json
 /home/vlhn/dev/MESAPP/MESAPP/MQTTStreaming/obj/Debug/net8.0/staticwebassets.development.json
@@ -28,3 +28,10 @@
 /home/vlhn/dev/MESAPP/MESAPP/MQTTStreaming/obj/Debug/net8.0/refint/MQTTStreaming.dll
 /home/vlhn/dev/MESAPP/MESAPP/MQTTStreaming/obj/Debug/net8.0/MQTTStreaming.pdb
 /home/vlhn/dev/MESAPP/MESAPP/MQTTStreaming/obj/Debug/net8.0/ref/MQTTStreaming.dll
+/home/vlhn/dev/MESAPP/MESAPP/MQTTStreaming/bin/Debug/net8.0/Shared.deps.json
+/home/vlhn/dev/MESAPP/MESAPP/MQTTStreaming/bin/Debug/net8.0/Shared.runtimeconfig.json
+/home/vlhn/dev/MESAPP/MESAPP/MQTTStreaming/bin/Debug/net8.0/appsettings.json
+/home/vlhn/dev/MESAPP/MESAPP/MQTTStreaming/bin/Debug/net8.0/Shared.staticwebassets.endpoints.json
+/home/vlhn/dev/MESAPP/MESAPP/MQTTStreaming/bin/Debug/net8.0/Shared
+/home/vlhn/dev/MESAPP/MESAPP/MQTTStreaming/bin/Debug/net8.0/Shared.dll
+/home/vlhn/dev/MESAPP/MESAPP/MQTTStreaming/bin/Debug/net8.0/Shared.pdb

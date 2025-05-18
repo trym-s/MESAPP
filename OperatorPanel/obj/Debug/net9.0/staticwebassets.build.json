@@ -1,11 +1,23 @@
 {
   "Version": 1,
-  "Hash": "gWY8zYuHrroy1gmy6SDe1lVFUlFQdaGeIOEcsOJOsGY=",
+  "Hash": "XPmtdlFD9SXRNp6vL+B3Y6Pb3uICAed1Vs4Jc7zr0L4=",
   "Source": "OperatorPanel",
   "BasePath": "_content/OperatorPanel",
   "Mode": "Default",
   "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/Shared/Shared.csproj",
+      "Version": 2,
+      "Source": "Shared",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
   "DiscoveryPatterns": [],
   "Assets": [],
   "Endpoints": []

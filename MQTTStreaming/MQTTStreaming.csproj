@@ -22,10 +22,18 @@
         <HintPath>..\..\..\..\.nuget\packages\microsoft.entityframeworkcore\8.0.2\lib\net8.0\Microsoft.EntityFrameworkCore.dll</HintPath>
       </Reference>
     </ItemGroup>
+    
+    <ItemGroup>
+        <ProjectReference Include="..\Shared\Shared.csproj" />
+    </ItemGroup>
 
     <ItemGroup>
       <PackageReference Include="MQTTnet" Version="4.0.0.167" />
       <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Shared\Shared.csproj" />
     </ItemGroup>
 
 </Project>

@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using OperatorPanel.Entities;
+using Shared.Entities;
 
 namespace OperatorPanel.Database;
 
@@ -10,36 +10,30 @@ public class OperatorPanelDbContext : DbContext
     {
     }
 
-    public DbSet<Workorder> Workorders { get; set; }
-    public DbSet<WorkorderStateLog> WorkorderStateLogs { get; set; }
-    public DbSet<Workstation> Workstations { get; set; }
+    // Shared.Entities içinden gelen DbSet tanımları (sadece kullanım için)
+    public DbSet<Workorder> Workorders => Set<Workorder>();
+    public DbSet<WorkorderStateLog> WorkorderStateLogs => Set<WorkorderStateLog>();
+    public DbSet<Workstation> Workstations => Set<Workstation>();
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
 
-        // ---------- TABLE MAPPINGS ----------
-        modelBuilder.Entity<Workstation>()
-            .ToTable("workstation", schema: "mes_db");
+        // Not: Burada Fluent API kullanımı migration üretmez, sadece model binding yapar.
+        // Migration üretimi sadece MesAppDbContext’te yapılmalı
 
-        modelBuilder.Entity<Workorder>()
-            .ToTable("workorder", schema: "mes_db");
+        // Amaç sadece uygulamanın run-time'da DB ile uyumlu çalışması
 
-        modelBuilder.Entity<WorkorderStateLog>()
-            .ToTable("workorder_state_log", schema: "mes_db");
+        modelBuilder.Entity<Workstation>().ToTable("workstation", schema: "mes_db");
+        modelBuilder.Entity<Workorder>().ToTable("workorder", schema: "mes_db");
+        modelBuilder.Entity<WorkorderStateLog>().ToTable("workorder_state_log", schema: "mes_db");
 
-        // ---------- PRIMARY KEYS ----------
-        modelBuilder.Entity<Workstation>()
-            .HasKey(w => w.WorkstationId);
+        // Primary Key tanımları (gerekli çünkü EF modeli tanımazsa hata verir)
+        modelBuilder.Entity<Workstation>().HasKey(w => w.WorkstationId);
+        modelBuilder.Entity<Workorder>().HasKey(wo => wo.WorkorderId);
+        modelBuilder.Entity<WorkorderStateLog>().HasKey(log => log.LogId);
 
-        modelBuilder.Entity<Workorder>()
-            .HasKey(wo => wo.WorkorderId);
-
-        modelBuilder.Entity<WorkorderStateLog>()
-            .HasKey(log => log.LogId);
-
-        // ---------- RELATIONSHIPS ----------
-
+        // İlişkiler (navigasyon property'lerin düzgün çalışması için gerekli)
         modelBuilder.Entity<Workstation>()
             .HasMany(w => w.Workorders)
             .WithOne(wo => wo.Workstation)

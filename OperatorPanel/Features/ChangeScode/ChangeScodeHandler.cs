@@ -1,7 +1,8 @@
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using OperatorPanel.Database;
-using OperatorPanel.Entities;
+using Shared.Entities;
+
 namespace OperatorPanel.Features.Commands.ChangeScode;
 public class ChangeScodeHandler : IRequestHandler<ChangeScodeCommand, ChangeScodeResult>
 {

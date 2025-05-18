@@ -11,17 +11,17 @@ public static class StreamingModule
 {
     public static IServiceCollection AddMQTTStreamingModule(this IServiceCollection services, IConfiguration configuration)
     {
-        // ✅ MQTT ayarlarını merkezi config'ten bind et
+        //  MQTT ayarlarını merkezi config'ten bind et
         services.Configure<MqttSettings>(configuration.GetSection("MqttSettings"));
 
-        // ✅ StreamingDbContext kaydı
+        //  StreamingDbContext kaydı
         services.AddDbContext<MqttStreamingDbContext>(options =>
             options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
 
-        // ✅ Command handler kaydı (MediatR kullanıyorsan explicit tanım veya assembly taraması yapabilirsin)
+        //  Command handler kaydı (MediatR kullanıyorsan explicit tanım veya assembly taraması yapabilirsin)
         services.AddScoped<IRequestHandler<SaveSensorDataCommand, Unit>, SaveSensorDataCommandHandler>();
 
-        // ✅ MQTT Listener (BackgroundService)
+        //  MQTT Listener (BackgroundService)
         services.AddHostedService<MqttSensorListener>();
 
         return services;

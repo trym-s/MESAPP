@@ -1,7 +1,7 @@
 using System;
 using System.Threading.Tasks;
 using Infrastructure.Database;
-using WorkstationInfo.Entities;
+using Shared.Entities;
 
 namespace WorkstationInfo.Repositories;
 

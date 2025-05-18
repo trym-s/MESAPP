@@ -1,7 +1,7 @@
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using MQTTStreaming.Database;
-using MQTTStreaming.Features.SensorData.Entities;
+using Shared.Entities;
 
 namespace MQTTStreaming.Features.SensorData.Commands.SaveSensorData;
 
@@ -10,7 +10,7 @@ public class SaveSensorDataCommandHandler(MqttStreamingDbContext context) : IReq
     public async Task<Unit> Handle(SaveSensorDataCommand request, CancellationToken cancellationToken)
     {
         var payload = request.Payload;
-        var entries = new List<Entities.SensorData>();
+        var entries = new List<Shared.Entities.SensorData>();
 
         // Aktif workorderId'yi bul
         var activeWorkorderId = await context.Workorders
@@ -38,7 +38,7 @@ public class SaveSensorDataCommandHandler(MqttStreamingDbContext context) : IReq
                 throw new Exception($"SensorType bulunamadı: {m.SensorName ?? "null"}");
 
             // Log tablosuna her veriyi ekle
-            entries.Add(new Entities.SensorData
+            entries.Add(new Shared.Entities.SensorData
             {
                 Id = Guid.NewGuid(),
                 WorkstationId = payload.WorkstationId,
