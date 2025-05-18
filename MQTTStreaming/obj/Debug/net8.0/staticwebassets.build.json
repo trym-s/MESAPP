@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "NuGWENMPI/CFqG+lDwvMQjYgMt2OhyqUvi7i3EzZiXU=",
+  "Hash": "XxjM0MzK2hnsWTC5FBMVCUMy0RT9jRSPY62CnxTH3Y8=",
   "Source": "MQTTStreaming",
   "BasePath": "_content/MQTTStreaming",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "/home/vlhn/dev/MESAPP/MESAPP/Shared/Shared.csproj",
+      "Identity": "/home/vmvm/MESAPP/Shared/Shared.csproj",
       "Version": 2,
       "Source": "Shared",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
@@ -19,6 +19,5 @@
     }
   ],
   "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "Assets": []
 }

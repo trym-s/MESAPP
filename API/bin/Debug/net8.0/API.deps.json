@@ -638,10 +638,7 @@
           "Shared": "1.0.0"
         },
         "runtime": {
-          "Infrastructure.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "Infrastructure.dll": {}
         }
       },
       "MQTTStreaming/1.0.0": {
@@ -655,10 +652,7 @@
           "Shared": "1.0.0"
         },
         "runtime": {
-          "MQTTStreaming.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "MQTTStreaming.dll": {}
         }
       },
       "OperatorPanel/1.0.0": {
@@ -672,10 +666,7 @@
           "Shared": "1.0.0"
         },
         "runtime": {
-          "OperatorPanel.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "OperatorPanel.dll": {}
         }
       },
       "Shared/1.0.0": {
@@ -683,10 +674,7 @@
           "MediatR": "12.0.0"
         },
         "runtime": {
-          "Shared.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "Shared.dll": {}
         }
       },
       "WorkstationInfo/1.0.0": {
@@ -704,10 +692,7 @@
           "Shared": "1.0.0"
         },
         "runtime": {
-          "WorkstationInfo.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "WorkstationInfo.dll": {}
         }
       }
     }

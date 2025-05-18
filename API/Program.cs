@@ -64,6 +64,8 @@ builder.Services.AddWorkstationInfoModule(builder.Configuration);
 builder.Services.AddOperatorPanelModule(builder.Configuration);
 builder.Services.AddMQTTStreamingModule(builder.Configuration); 
 
+
+
 var app = builder.Build();
 
 // 🔹 Middleware

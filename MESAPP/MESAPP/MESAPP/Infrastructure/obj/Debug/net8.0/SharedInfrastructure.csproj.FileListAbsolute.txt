@@ -1,0 +1,14 @@
+/home/vlhn/RiderProjects/MESAPP/SharedInfrastructure/bin/Debug/net8.0/SharedInfrastructure.deps.json
+/home/vlhn/RiderProjects/MESAPP/SharedInfrastructure/bin/Debug/net8.0/SharedInfrastructure.runtimeconfig.json
+/home/vlhn/RiderProjects/MESAPP/SharedInfrastructure/bin/Debug/net8.0/SharedInfrastructure.dll
+/home/vlhn/RiderProjects/MESAPP/SharedInfrastructure/bin/Debug/net8.0/SharedInfrastructure.pdb
+/home/vlhn/RiderProjects/MESAPP/SharedInfrastructure/obj/Debug/net8.0/SharedInfrastructure.csproj.AssemblyReference.cache
+/home/vlhn/RiderProjects/MESAPP/SharedInfrastructure/obj/Debug/net8.0/SharedInfrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/home/vlhn/RiderProjects/MESAPP/SharedInfrastructure/obj/Debug/net8.0/SharedInfrastructure.AssemblyInfoInputs.cache
+/home/vlhn/RiderProjects/MESAPP/SharedInfrastructure/obj/Debug/net8.0/SharedInfrastructure.AssemblyInfo.cs
+/home/vlhn/RiderProjects/MESAPP/SharedInfrastructure/obj/Debug/net8.0/SharedInfrastructure.csproj.CoreCompileInputs.cache
+/home/vlhn/RiderProjects/MESAPP/SharedInfrastructure/obj/Debug/net8.0/SharedInfrastructure.dll
+/home/vlhn/RiderProjects/MESAPP/SharedInfrastructure/obj/Debug/net8.0/refint/SharedInfrastructure.dll
+/home/vlhn/RiderProjects/MESAPP/SharedInfrastructure/obj/Debug/net8.0/SharedInfrastructure.pdb
+/home/vlhn/RiderProjects/MESAPP/SharedInfrastructure/obj/Debug/net8.0/SharedInfrastructure.genruntimeconfig.cache
+/home/vlhn/RiderProjects/MESAPP/SharedInfrastructure/obj/Debug/net8.0/ref/SharedInfrastructure.dll
